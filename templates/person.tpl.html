@@ -1,0 +1,62 @@
+
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{$ctrl.person.display_name}}</span>
+      <div ng-if="$ctrl.person.orcid" class="md-subhead" itemscope itemtype="https://schema.org/Person">
+        <a itemprop="sameAs" content="https://orcid.org/{{$ctrl.person.orcid}}"
+           href="https://orcid.org/{{$ctrl.person.orcid}}"
+           target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;">
+           <img src="/media/orcid_16x16.png"
+                style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/{{$ctrl.person.orcid}}</a>
+      </div>
+      <span class="md-subhead">{{$ctrl.person.position}}</span>
+      <span class="md-subhead">{{$ctrl.person.team.name_en}}</span>
+      <span class="md-subhead">{{$ctrl.person.team.institution}}, {{$ctrl.person.team.city}}</span>
+    </md-card-title-text>
+    <md-card-title-media>
+      <div class="md-media-lg card-media"><img src={{$ctrl.person.photo}}></div>
+      <div ng-if="$ctrl.editing">
+        <input type="file" nv-file-select uploader="$ctrl.getUploader()"/><br/>
+          <ul>
+              <li ng-repeat="item in $ctrl.uploader.queue">
+                  Name: <span ng-bind="item.file.name"></span><br/>
+                  <button ng-click="item.upload()">upload</button>
+              </li>
+          </ul>
+      </div>
+    </md-card-title-media>
+  </md-card-title>
+  <md-card-content>
+    <div ng-if="!$ctrl.editing" markdown-to-html="$ctrl.person.interests_en"></div>
+    <md-input-container ng-if="$ctrl.editing" class="md-block">
+      <label>Research interests (English)</label>
+      <textarea ng-model="$ctrl.person.interests_en" rows="5" md-select-on-focus></textarea>
+      <div class="hint">You can use <a href="https://github.com/showdownjs/showdown/wiki/Showdown%27s-Markdown-syntax">Markdown syntax</a> to add formatting and links.</div>
+    </md-input-container>
+    <md-input-container ng-if="$ctrl.editing" class="md-block">
+      <label>Activités de recherche (Français)</label>
+      <textarea ng-model="$ctrl.person.interests_fr" rows="5" md-select-on-focus></textarea>
+    </md-input-container>
+
+    <md-grid-list md-cols="9" md-gutter="1em" md-row-height="1:1">
+      <md-grid-tile class="project md-clickable logo" ui-sref="project({ id: project.label })" ng-repeat="project in $ctrl.person.projectObjs">
+        <img src="{{project.logo}}">
+        <md-grid-tile-footer>
+          {{project.name}}
+        </md-grid-tile-footer>
+
+      </md-grid-tile>
+    </md-grid-list>
+
+  </md-card-content>
+
+  <md-card-actions ng-if="$ctrl.canEdit($ctrl.person)" layout="row" layout-align="end center">
+    <md-button ng-if="!$ctrl.editing" class="md-icon-button" aria-label="Edit person" ng-click="$ctrl.editPerson()">
+      <md-icon>edit</md-icon>
+    </md-button>
+    <md-button ng-if="$ctrl.editing" class="md-icon-button" aria-label="Save changes" ng-click="$ctrl.saveChanges()">
+      <md-icon>save</md-icon>
+    </md-button>
+  </md-card-actions>
+  </md-card>

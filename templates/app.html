@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="initial-scale=1" />
+
+  <base href="/">
+
+  <title>INCF France</title>
+
+  <!-- css files -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/static/angular-material/angular-material.css"/>
+  <link rel="stylesheet" href="/static/app.css">
+
+  <!-- angular stuff -->
+  <script src="/static/angular/angular.js"></script>
+  <script src="/static/angular-aria/angular-aria.js"></script>
+  <script src="/static/angular-animate/angular-animate.js"></script>
+  <script src="/static/angular-material/angular-material.js"></script>
+  <script src="/static/angular-resource/angular-resource.js"></script>
+  <script src="/static/@uirouter/angularjs/release/angular-ui-router.js"></script>
+  <script src="/static/angular-sanitize/angular-sanitize.js"></script>
+  <script src="/static/showdown/dist/showdown.js"></script>
+  <script src="/static/ng-showdown/dist/ng-showdown.js"></script>
+  <script src="/static/angular-file-upload/dist/angular-file-upload.min.js"></script>
+
+  <!-- our angular app -->
+  <script src="/static/app.js"></script>
+  <script src="/static/services.js"></script>
+  <script src="/static/controllers.js"></script>
+  <script src="/static/components.js"></script>
+</head>
+
+<body ng-cloak ng-app="YourApp" layout="column">
+{% verbatim %}
+
+   <!-- Toolbar -->
+   <md-toolbar layout="row" ng-controller="ProfileController as pc" class="md-toolbar-tools md-medium-tall" style="background: #fafafa">
+      <h1 flex><a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France"></a></h1>
+      <md-button ng-if="!pc.orcid" class="md-accent" aria-label="Log-in" href="/accounts/orcid/login/?process=login">
+        Log-in
+      </md-button>
+      <md-button ng-if="pc.orcid" class="md-accent" aria-label="Log-out" href="/accounts/logout/">
+        Log-out {{pc.orcid}}
+      </md-button>
+   </md-toolbar>
+
+    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+      <md-nav-item md-nav-sref="about" name="about">About</md-nav-item>
+      <md-nav-item md-nav-sref="people" name="people">People</md-nav-item>
+      <md-nav-item md-nav-sref="projects" name="projects">Projects</md-nav-item>
+      <md-nav-item md-nav-sref="workshops" name="workshops">Workshops</md-nav-item>
+    </md-nav-bar>
+
+   <!-- Container for main content -->
+    <div flex layout="row" layout-margin>
+
+      <!-- Main content -->
+      <md-content flex id="content">
+        <ui-view>
+        </ui-view>
+
+      </md-content>
+
+    </div>
+
+{% endverbatim %}
+
+</body>
+</html>

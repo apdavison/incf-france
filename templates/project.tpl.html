@@ -1,0 +1,110 @@
+
+
+
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{$ctrl.project.name}}</span>
+
+      <div ng-if="!$ctrl.editing" layout="column">
+        <span class="md-subhead">{{$ctrl.project.short_description_en}}</span>
+        <span class="md-subhead">{{$ctrl.project.licence}}</span>
+        <section layout="row" layout-align="left center" layout-wrap>
+            <a href="{{$ctrl.project.documentation}}" class="md-button" ng-show="$ctrl.project.documentation" aria-label="Documentation">
+                <md-tooltip md-direction="top">Documentation</md-tooltip><md-icon>book</md-icon></a>
+            <a href="{{$ctrl.project.download}}" class="md-button" ng-show="$ctrl.project.download" aria-label="Download">
+                <md-tooltip md-direction="top">Download</md-tooltip><md-icon>cloud_download</md-icon></a>
+            <a href="{{$ctrl.project.source_code}}" class="md-button" ng-show="$ctrl.project.source_code" aria-label="Source code">
+                <md-tooltip md-direction="top">Source code</md-tooltip><md-icon>code</md-icon></a>
+          </section>
+      </div>
+
+      <div ng-if="$ctrl.editing" layout="column">
+        <md-input-container><label>Short description (en)</label><input ng-model="$ctrl.project.short_description_en"></md-input-container>
+        <md-input-container><label>Short description (fr)</label><input ng-model="$ctrl.project.short_description_fr"></md-input-container>
+        <md-input-container>
+          <label>Licence</label>
+          <md-autocomplete md-search-text="searchText"
+                           md-items="item in $ctrl.licenceSearch(searchText)"
+                           md-item-text="item"
+                           md-selected-item="$ctrl.project.licence">
+            <span md-highlight-text="searchText">{{item}}</span>
+          </md-autocomplete>
+        </md-input-container>
+      </div>
+    </md-card-title-text>
+
+    <md-card-title-media>
+      <div class="md-media-lg card-media"><img src="{{$ctrl.project.logo}}"></div>
+      <div ng-if="$ctrl.editing">
+        <input type="file" nv-file-select uploader="$ctrl.getUploader()"/><br/>
+          <ul>
+              <li ng-repeat="item in $ctrl.uploader.queue">
+                  Name: <span ng-bind="item.file.name"></span><br/>
+                  <button ng-click="item.upload()">upload</button>
+              </li>
+          </ul>
+      </div>
+    </md-card-title-media>
+  </md-card-title>
+
+  <md-card-content>
+
+    <div ng-if="!$ctrl.editing">
+
+      <div markdown-to-html="$ctrl.project.long_description_en"></div>
+    </div>
+
+    <div ng-if="$ctrl.editing" layout="column">
+      <md-input-container><label>Documentation URL</label><input ng-model="$ctrl.project.documentation"></md-input-container>
+      <md-input-container><label>Download URL</label><input ng-model="$ctrl.project.download"></md-input-container>
+      <md-input-container><label>Source code URL</label><input ng-model="$ctrl.project.source_code"></md-input-container>
+      <md-input-container class="md-block">
+          <div class="hint">You can use <a href="https://github.com/showdownjs/showdown/wiki/Showdown%27s-Markdown-syntax">Markdown syntax</a> to add formatting and links.</div>
+          <label>Long description (en)</label>
+          <textarea ng-model="$ctrl.project.long_description_en" rows="5" md-select-on-focus></textarea>
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Long description (fr)</label>
+          <textarea ng-model="$ctrl.project.long_description_fr" rows="5" md-select-on-focus></textarea>
+        </md-input-container>
+    </div>
+
+    <h3>Contributors
+      <md-button ng-if="$ctrl.editing" class="md-icon-button" aria-label="Open contributor selector" ng-click="$ctrl.selectContributor()">
+        <md-icon ng-if="!$ctrl.addingContributor">add</md-icon>
+      </md-button>
+    </h3>
+    <md-input-container ng-if="$ctrl.addingContributor" layout="row">
+        <md-select ng-model="$ctrl.newContributor" aria-label="List of possible contributors">
+            <md-option ng-repeat="person in $ctrl.people" ng-value="{{person}}">
+              {{person.display_name}}
+            </md-option>
+        </md-select>
+        <md-button class="md-icon-button" aria-label="Save contributor" ng-click="$ctrl.saveContributor()">
+            <md-icon>add</md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="Cancel adding contributor" ng-click="$ctrl.cancelAddingContributor()">
+            <md-icon>clear</md-icon>
+        </md-button>
+    </md-input-container>
+    <md-grid-list md-cols="5" md-gutter="1em" md-row-height="5:1">
+      <md-grid-tile class="person md-clickable" ui-sref="person({ id: person.label })" ng-repeat="person in $ctrl.project.contributorObjs">
+          {{person.display_name}}
+      </md-grid-tile>
+    </md-grid-list>
+
+  </md-card-content>
+
+  <md-card-actions ng-if="$ctrl.canEdit()" layout="row" layout-align="end center">
+    <md-button ng-if="!$ctrl.editing" class="md-icon-button" aria-label="Edit project" ng-click="$ctrl.editProject()">
+      <md-icon>edit</md-icon>
+    </md-button>
+    <md-button ng-if="$ctrl.editing" class="md-icon-button" aria-label="Cancel editing" ng-click="$ctrl.cancel()">
+      <md-icon>clear</md-icon>
+    </md-button>
+    <md-button ng-if="$ctrl.editing" class="md-icon-button" aria-label="Save changes" ng-click="$ctrl.saveChanges()">
+      <md-icon>save</md-icon>
+    </md-button>
+  </md-card-actions>
+</md-card>

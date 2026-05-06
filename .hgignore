@@ -1,0 +1,8 @@
+syntax: glob
+
+*.pyc
+INCF National Node logos
+.idea
+incf.db
+node_modules
+postgres_data

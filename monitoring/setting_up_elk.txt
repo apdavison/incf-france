@@ -1,0 +1,134 @@
+# Outline for installing ELK stack.
+# based on https://pawelurbanek.com/elk-nginx-logs-setup
+
+# todo: automate this, either with Docker or with Puppet, etc.
+
+# Install Java
+    1  add-apt-repository ppa:webupd8team/java
+    2  apt-get update
+    3  apt-get install oracle-java8-installer
+    4  apt-get install oracle-java8-set-default
+    5  vi /etc/environment
+        # add line JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+    6  java -version
+
+# Install Elasticsearch
+    7  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+    8  apt-get install apt-transport-https
+   10  apt-get update
+   11  echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
+   12  apt-get install elasticsearch
+   13  vi /etc/elasticsearch/elasticsearch.yml
+        # uncomment the following lines:
+        #   http.port: 9200
+        #   network.host: localhost
+   14  service elasticsearch start
+   15  curl -v http://localhost:9200
+   16  service list
+
+# Install Kibana
+   23  apt-get install kibana
+   24  vi /etc/kibana/kibana.yml
+        # add the following lines:
+        #   server.port: 5601
+        #   server.host: "localhost"
+        #   elasticsearch.url: "http://localhost:9200"
+   25  service kibana start
+   26  curl -v http://localhost:5601
+
+# Install reverse proxy to protect Kibana
+   28  add-apt-repository ppa:certbot/certbot
+   29  apt-get update
+   30  apt-get install nginx apache2-utils
+   31  apt-get install python-certbot-nginx
+   32  certbot --nginx -d monitor.brainsimulation.eu
+   33  htpasswd -c /etc/nginx/htpasswd.users kibanaadmin
+   38  vi /etc/nginx/sites-available/default
+      #  server {
+      #      listen 443 default_server ssl;
+      #
+      #      server_name monitor.brainsimulation.eu
+      #      ssl_certificate /etc/letsencrypt/live/monitor.brainsimulation.eu/fullchain.pem;
+      #      ssl_certificate_key /etc/letsencrypt/live/monitor.brainsimulation.eu/privkey.pem;
+
+      #      auth_basic "Restricted Access";
+      #      auth_basic_user_file /etc/nginx/htpasswd.users;
+
+      #      location / {
+      #          proxy_pass http://localhost:5601;
+      #          proxy_http_version 1.1;
+      #          proxy_set_header Upgrade $http_upgrade;
+      #          proxy_set_header Connection 'upgrade';
+      #          proxy_set_header Host $host;
+      #          proxy_cache_bypass $http_upgrade;
+      #      }
+      #  }
+   39  service nginx restart
+
+# Install and configure logstash
+   40  apt-get install logstash
+   41  mkdir -p /etc/elk-certs
+   42  cd /etc/elk-certs
+   43  openssl req -subj '/CN=monitor.brainsimulation.eu/' -x509 -days 3650 -batch -nodes -newkey rsa:2048 -keyout elk-ssl.key -out elk-ssl.crt
+   44  chown logstash elk-ssl.crt
+   45  chown logstash elk-ssl.key
+   # now copy these files to website Docker container for use by filebeat
+
+   49  cd /etc/logstash/
+   50  wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz
+   51  gunzip GeoLite2-City.mmdb.gz
+
+   54  vi logstash.yml
+    # path.data: /var/lib/logstash
+    # path.config: /etc/logstash/conf.d
+    # path.logs: /var/log/logstash
+   57  vi /etc/logstash/conf.d/logstash-nginx-es.conf
+        #input {
+        #    beats {
+        #        port => 5400
+        #        ssl => true
+        #        ssl_certificate_authorities => ["/etc/elk-certs/elk-ssl.crt"]
+        #        ssl_certificate => "/etc/elk-certs/elk-ssl.crt"
+        #        ssl_key => "/etc/elk-certs/elk-ssl.key"
+        #        ssl_verify_mode => "force_peer"
+        #    }
+        #}
+        #
+        #filter {
+        # grok {
+        #   match => [ "message" , "%{COMBINEDAPACHELOG}+%{GREEDYDATA:extra_fields}"]
+        #   overwrite => [ "message" ]
+        # }
+        # mutate {
+        #   convert => ["response", "integer"]
+        #   convert => ["bytes", "integer"]
+        #   convert => ["responsetime", "float"]
+        # }
+        # geoip {
+        #   source => "clientip"
+        #   target => "geoip"
+        #   add_tag => [ "nginx-geoip" ]
+        # }
+        # date {
+        #   match => [ "timestamp" , "dd/MMM/YYYY:HH:mm:ss Z" ]
+        #   remove_field => [ "timestamp" ]
+        # }
+        # useragent {
+        #   source => "agent"
+        # }
+        #}
+        #
+        #output {
+        # elasticsearch {
+        #   hosts => ["localhost:9200"]
+        #   index => "weblogs-%{+YYYY.MM.dd}"
+        #   document_type => "nginx_logs"
+        # }
+        # stdout { codec => rubydebug }
+        #}
+   58  systemctl enable logstash
+   62  service logstash start
+   63  netstat -tulpn | grep 5400
+
+# Debugging logstash
+   65  tail -f /var/log/logstash/logstash-plain.log

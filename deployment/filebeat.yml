@@ -1,0 +1,24 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /var/log/nginx/*.log
+  exclude_files: ['\.gz$']
+  fields_under_root: true
+  fields:
+    document_type: nginx
+- type: log
+  paths:
+    - /var/log/django.log
+  exclude_files: ['\.gz$']
+  fields_under_root: true
+  fields:
+    document_type: django
+  multiline.pattern: ^[0-9]{4}-[0-9]{2}-[0-9]{2}
+  multiline.negate: true
+  multiline.match: after
+
+output.logstash:
+  hosts: ["monitor.brainsimulation.eu:5400"]
+  ssl.certificate_authorities: ["/etc/elk-certs/elk-ssl.crt"]
+  ssl.certificate: "/etc/elk-certs/elk-ssl.crt"
+  ssl.key: "/etc/elk-certs/elk-ssl.key"
