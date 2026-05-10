@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fafafa;
+    padding-top: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Toolbar — 88px tall matching Angular Material md-medium-tall, logo overflows naturally --- */
+.site-toolbar {
+    background: #fafafa;
+    height: 88px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+}
+
+.site-logo {
+    width: auto;
+    display: block;
+}
+
+/* --- Nav bar (white, matching Angular Material md-nav-bar) --- */
+.site-nav {
+    background: #fafafa;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 1;
+    padding-left: 8px;
+}
+
+.site-nav a {
+    position: relative;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px 16px;
+    height: 48px;
+    line-height: 24px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.site-nav a:hover {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgba(158, 158, 158, 0.2);
+    text-decoration: none;
+}
+
+.site-nav a.active:hover {
+    color: rgb(0, 150, 136);
+}
+
+.site-nav a.active {
+    color: rgb(0, 150, 136);
+}
+
+/* Teal ink-bar underline on active nav item */
+.site-nav a.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #009688;
+}
+
+/* --- Main content area --- */
+.content-container {
+    margin: 0 0 16px;
+    padding: 24px;
+}
+
+/* --- Links --- */
+a {
+    font-weight: 500;
+    color: rgb(0, 150, 136);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 150, 136);
+}
+
+a:hover, a:active {
+    color: rgb(0, 191, 165);
+    text-decoration: underline;
+}
+
+/* --- Material Design cards --- */
+.md-card {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.md-card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.md-card-title {
+    padding: 24px 16px 16px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.md-card-title h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+
+.md-card-title-text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.md-card-title-media {
+    flex: 0 0 auto;
+    margin-left: 16px;
+}
+
+.md-headline {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 4px;
+}
+
+.md-subhead {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 24px;
+}
+
+.md-card-content {
+    padding: 0 16px 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.md-card-content:last-child {
+    padding-bottom: 32px;
+}
+
+.md-card-content p:last-child {
+    margin-bottom: 0;
+}
+
+.md-card-actions {
+    padding: 8px 8px 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.md-card-actions a {
+    padding: 0 6px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.md-card-actions a:hover {
+    background: rgba(0, 150, 136, 0.1);
+    text-decoration: none;
+}
+
+/* --- Card grid (home page, workshop) --- */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex="25" in Angular Material: grow/shrink from 100% but cap at 25% */
+.card-grid .md-card {
+    flex: 1 1 100%;
+    max-width: 25%;
+    margin: 8px;
+}
+
+/* Extra spacing between consecutive card rows (matches md-content padding: 16px on each side) */
+.card-grid + .card-grid {
+    margin-top: 32px;
+}
+
+/* --- People grid (5-column, 5:1 aspect ratio tiles, matching md-grid-list md-cols="5" md-row-height="5:1") --- */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    margin-bottom: 1rem;
+}
+
+.person-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: lightgray;
+    aspect-ratio: 5 / 1;
+    border-radius: 2px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 8px;
+}
+
+.person-tile:hover {
+    background: #bdbdbd;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+
+/* --- Project grid (9-column square tiles with footer overlay, matching md-grid-list md-cols="9" md-row-height="1:1") --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1em;
+    margin-bottom: 1rem;
+}
+
+.project-tile {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: rgb(240, 238, 238);
+    border-radius: 2px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.project-tile:hover {
+    text-decoration: none;
+}
+
+.project-tile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 4px;
+}
+
+/* Footer overlay — matches md-grid-tile-footer */
+.project-tile span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.18);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* --- Person detail --- */
+.person-photo {
+    max-width: 180px;
+    display: block;
+    border-radius: 2px;
+}
+
+/* --- Project detail --- */
+.project-logo {
+    max-width: 200px;
+    max-height: 160px;
+    object-fit: contain;
+    display: block;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.project-links a {
+    padding: 0.3rem 0.75rem;
+    background: rgba(0, 150, 136, 0.08);
+    border-radius: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    background: rgba(0, 150, 136, 0.2);
+    text-decoration: none;
+}
+
+.project-description {
+    margin-top: 1rem;
+}
+
+.project-description img {
+    max-width: 100%;
+}
+
+/* --- Typography within content --- */
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.75rem;
+}
+
+p {
+    margin-bottom: 0.75rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 2rem 0;
+}
+
+/* --- Workshop page --- */
+.workshop-banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.flag-icon {
+    width: 1.2em;
+    vertical-align: middle;
+}

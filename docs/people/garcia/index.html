@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — Samuel Garcia</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">Samuel Garcia</span>
+
+      
+
+      
+
+      
+      <span class="md-subhead">Coding and Memory in Olfaction</span>
+      <span class="md-subhead">Centre de Recherche en Neurosciences de Lyon (Inserm U1028 - CNRS UMR5292), Université Claude-Bernard, Lyon</span>
+      
+    </div>
+
+    
+  </div>
+
+  <div class="md-card-content">
+    
+
+    
+    <h3>Projects</h3>
+    <div class="project-grid">
+      
+      <a href="/projects/Neo/" class="project-tile">
+        
+        <img src="/media/photos/neologoshort_small_1.png" alt="Neo">
+        
+        <span>Neo</span>
+      </a>
+      
+      <a href="/projects/Tridesclous/" class="project-tile">
+        
+        <img src="/media/photos/main_icon.png" alt="Tridesclous">
+        
+        <span>Tridesclous</span>
+      </a>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

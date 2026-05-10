@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — PyNN</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">PyNN</span>
+      <span class="md-subhead">A Python package for simulator-independent specification of neuronal network models.</span>
+      <span class="md-subhead">CeCILL Free Software License Agreement v2.0</span>
+      <div class="project-links">
+        
+        <a href="http://neuralensemble.org/docs/PyNN/">Documentation</a>
+        
+        
+        <a href="https://pypi.org/project/PyNN/">Download</a>
+        
+        
+        <a href="https://github.com/NeuralEnsemble/PyNN/">Source code</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="md-card-title-media">
+      <img src="/media/photos/pynn_logo_sq.png" alt="PyNN" class="project-logo">
+    </div>
+    
+  </div>
+
+  <div class="md-card-content">
+    
+    <div class="project-description">
+      <p>PyNN (pronounced 'pine') is a simulator-independent language for building neuronal network models.</p>
+<p>In other words, you can write the code for a model once, using the PyNN API and the Python programming language, and then run it without modification on any simulator that PyNN supports (currently <a href="http://www.neuron.yale.edu/neuron/">NEURON</a>, NEST, and Brian), and on the SpiNNaker and BrainScaleS neuromorphic hardware systems.</p>
+<p>The PyNN API aims to support modelling at a high-level of abstraction (populations of neurons, layers, columns and the connections between them) while still allowing access to the details of individual neurons and synapses when required. PyNN provides a library of standard neuron, synapse and synaptic plasticity models, which have been verified to work the same on the different supported simulators. PyNN also provides a set of commonly-used connectivity algorithms (e.g. all-to-all, random, distance-dependent, small-world) but makes it easy to provide your own connectivity in a simulator-independent way, either using the Connection Set Algebra (<a href="http://software.incf.org/software/csa/">Djurfeldt, 2010</a>) or by writing your own Python code.</p>
+<p>Even if you don't wish to run simulations on multiple simulators, you may benefit from writing your simulation code using PyNN's powerful, high-level interface. In this case, you can use any neuron or synapse model supported by your simulator, and are not restricted to the standard models.</p>
+<h3>Citing PyNN</h3>
+<p>If you publish work using or mentioning PyNN, we would appreciate it if you would cite the following paper:</p>
+<p>Davison AP, Brüderle D, Eppler JM, Kremkow J, Muller E, Pecevski DA, Perrinet L and Yger P (2009) PyNN: a common interface for neuronal network simulators. <em>Frontiers in Neuroinformatics</em> 2:11 <a href="http://doi.org/10.3389/neuro.11.011.2008">doi:10.3389/neuro.11.011.2008</a></p>
+    </div>
+    
+
+    
+    <h3>Contributors</h3>
+    <div class="people-grid">
+      
+      <a href="/people/davison/" class="person-tile">Andrew Davison</a>
+      
+      <a href="/people/yger/" class="person-tile">Pierre Yger</a>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

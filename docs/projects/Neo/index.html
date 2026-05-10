@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — Neo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">Neo</span>
+      <span class="md-subhead">Neo is a package for representing electrophysiology data in Python, together with support for reading a wide range of neurophysiology file formats.</span>
+      <span class="md-subhead">BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</span>
+      <div class="project-links">
+        
+        <a href="http://neo.readthedocs.org/">Documentation</a>
+        
+        
+        <a href="http://pypi.python.org/pypi/neo/">Download</a>
+        
+        
+        <a href="https://github.com/NeuralEnsemble/python-neo">Source code</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="md-card-title-media">
+      <img src="/media/photos/neologoshort_small_1.png" alt="Neo" class="project-logo">
+    </div>
+    
+  </div>
+
+  <div class="md-card-content">
+    
+    <div class="project-description">
+      <p>Neo is a package for representing electrophysiology data in Python, together with support for reading a wide range of neurophysiology file formats, including Spike2, NeuroExplorer, AlphaOmega, Axon, Blackrock, Plexon, Tdt, and support for writing to a subset of these formats plus non-proprietary formats including HDF5.
+The goal of Neo is to improve interoperability between Python tools for analyzing, visualizing and generating electrophysiology data (such as OpenElectrophy, NeuroTools, G-node, Helmholtz, PyNN) by providing a common, shared object model. In order to be as lightweight a dependency as possible, Neo is deliberately limited to represention of data, with no functions for data analysis or visualization.</p>
+<p>Neo implements a hierarchical data model well adapted to intracellular and extracellular electrophysiology and EEG data with support for multi-electrodes (for example tetrodes). Neo’s data objects build on the quantities package, which in turn builds on NumPy by adding support for physical dimensions. Thus Neo objects behave just like normal NumPy arrays, but with additional metadata, checks for dimensional consistency and automatic unit conversion.</p>
+    </div>
+    
+
+    
+    <h3>Contributors</h3>
+    <div class="people-grid">
+      
+      <a href="/people/davison/" class="person-tile">Andrew Davison</a>
+      
+      <a href="/people/garcia/" class="person-tile">Samuel Garcia</a>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

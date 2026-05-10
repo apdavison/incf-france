@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Projects{% endblock %}
+{% block content %}
+
+<h1>Projects</h1>
+<p>Neuroinformatics tools and services developed in France.</p>
+
+<div class="project-grid">
+  {% for project in projects %}
+  <a href="/projects/{{ project.id }}/" class="project-tile">
+    {% if project.logo_url %}
+    <img src="{{ project.logo_url }}" alt="{{ project.name }}">
+    {% endif %}
+    <span>{{ project.name }}</span>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

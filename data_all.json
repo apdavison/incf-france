@@ -1,2206 +1,2419 @@
 [
-{
-  "model": "auth.permission",
-  "pk": 1,
-  "fields": {
-    "name": "Can add log entry",
-    "content_type": 1,
-    "codename": "add_logentry"
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add site",
+      "content_type": 5,
+      "codename": "add_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change site",
+      "content_type": 5,
+      "codename": "change_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete site",
+      "content_type": 5,
+      "codename": "delete_site"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 6,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 6,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 6,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 7,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 7,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 7,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add email address",
+      "content_type": 8,
+      "codename": "add_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change email address",
+      "content_type": 8,
+      "codename": "change_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete email address",
+      "content_type": 8,
+      "codename": "delete_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add email confirmation",
+      "content_type": 9,
+      "codename": "add_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change email confirmation",
+      "content_type": 9,
+      "codename": "change_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete email confirmation",
+      "content_type": 9,
+      "codename": "delete_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add social account",
+      "content_type": 10,
+      "codename": "add_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change social account",
+      "content_type": 10,
+      "codename": "change_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete social account",
+      "content_type": 10,
+      "codename": "delete_socialaccount"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add social application",
+      "content_type": 11,
+      "codename": "add_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change social application",
+      "content_type": 11,
+      "codename": "change_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete social application",
+      "content_type": 11,
+      "codename": "delete_socialapp"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add social application token",
+      "content_type": 12,
+      "codename": "add_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change social application token",
+      "content_type": 12,
+      "codename": "change_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete social application token",
+      "content_type": 12,
+      "codename": "delete_socialtoken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add laboratory",
+      "content_type": 13,
+      "codename": "add_laboratory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change laboratory",
+      "content_type": 13,
+      "codename": "change_laboratory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete laboratory",
+      "content_type": 13,
+      "codename": "delete_laboratory"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can add position type",
+      "content_type": 14,
+      "codename": "add_positiontype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can change position type",
+      "content_type": 14,
+      "codename": "change_positiontype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can delete position type",
+      "content_type": 14,
+      "codename": "delete_positiontype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can add project",
+      "content_type": 15,
+      "codename": "add_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can change project",
+      "content_type": 15,
+      "codename": "change_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can delete project",
+      "content_type": 15,
+      "codename": "delete_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can add researcher",
+      "content_type": 16,
+      "codename": "add_researcher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can change researcher",
+      "content_type": 16,
+      "codename": "change_researcher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can delete researcher",
+      "content_type": 16,
+      "codename": "delete_researcher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add resource",
+      "content_type": 17,
+      "codename": "add_resource"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change resource",
+      "content_type": 17,
+      "codename": "change_resource"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete resource",
+      "content_type": 17,
+      "codename": "delete_resource"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can add resource type",
+      "content_type": 18,
+      "codename": "add_resourcetype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can change resource type",
+      "content_type": 18,
+      "codename": "change_resourcetype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can delete resource type",
+      "content_type": 18,
+      "codename": "delete_resourcetype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can add team",
+      "content_type": 19,
+      "codename": "add_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can change team",
+      "content_type": 19,
+      "codename": "change_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can delete team",
+      "content_type": 19,
+      "codename": "delete_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can add text",
+      "content_type": 20,
+      "codename": "add_text"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can change text",
+      "content_type": 20,
+      "codename": "change_text"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can delete text",
+      "content_type": 20,
+      "codename": "delete_text"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$CJ1Vqs0RO6Z4$YQH172eWp7o9o7IKN8C75u9eyal8tHpdT9lTm3AwG0Y=",
+      "last_login": "2018-07-26T15:49:04.135Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "andrew.davison@unic.cnrs-gif.fr",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-06-01T08:07:08.092Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "!ZsCidTqOnupd9WLFIIPwgLSEEMz28nQd8B4o8mi9",
+      "last_login": "2018-06-01T09:01:38.831Z",
+      "is_superuser": false,
+      "username": "andrew",
+      "first_name": "Andrew",
+      "last_name": "Davison",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-06-01T08:09:08.064Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2018-06-01T08:08:26.705Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Orcid",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2018-06-01T08:08:47.567Z",
+      "user": 1,
+      "content_type": 5,
+      "object_id": "1",
+      "object_repr": "neuroinf.fr",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"domain\", \"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2018-06-01T08:08:58.144Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Orcid",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"sites\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2018-07-26T15:49:32.284Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "Tridesclous",
+      "object_repr": "Tridesclous",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"short_description_fr\", \"long_description_en\", \"members\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2018-07-26T15:52:03.138Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "OpenElectrophy",
+      "object_repr": "OpenElectrophy",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2018-07-26T15:55:35.203Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "mozaik",
+      "object_repr": "Mozaik",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2018-07-26T16:01:46.359Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "PyHRF",
+      "object_repr": "PyHRF",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2018-07-26T16:07:34.707Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "PRANAS",
+      "object_repr": "PRANAS",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2018-07-26T16:13:32.848Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "MotionClouds",
+      "object_repr": "MotionClouds",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2018-07-27T13:33:38.671Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "nilearn",
+      "object_repr": "Nilearn",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2018-07-27T13:35:48.484Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "nipy",
+      "object_repr": "NIPY",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2018-07-27T15:35:15.612Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "cessac",
+      "object_repr": " Bruno  Cessac",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2018-07-27T15:35:35.871Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "PRANAS",
+      "object_repr": "PRANAS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"members\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2018-07-27T15:37:49.977Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "vieville",
+      "object_repr": " Thierry  Viéville",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2018-07-27T15:38:08.449Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "PRANAS",
+      "object_repr": "PRANAS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"members\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2018-07-27T15:47:51.064Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "IRISA",
+      "object_repr": "IRISA, Rennes",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2018-07-27T15:47:54.629Z",
+      "user": 1,
+      "content_type": 19,
+      "object_id": "VisAGeS",
+      "object_repr": "Vision, Action and information manaGement System in health, IRISA, Rennes",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2018-07-27T15:49:18.130Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "maumet",
+      "object_repr": " Camille  Maumet",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2018-07-27T15:51:37.358Z",
+      "user": 1,
+      "content_type": 15,
+      "object_id": "NIDM",
+      "object_repr": "Neuroimaging Data Model",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "IRISA",
+    "fields": {
+      "name": "Institut de Recherche en Informatique et Systèmes Aléatoires",
+      "url": "https://www.irisa.fr/",
+      "city": "Rennes",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "cerco",
+    "fields": {
+      "name": "Centre de Recherche Cerveau & Cognition (UMR5549)",
+      "url": "http://cerco.ups-tlse.fr/",
+      "city": "Toulouse",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "crnl",
+    "fields": {
+      "name": "Centre de Recherche en Neurosciences de Lyon (Inserm U1028 - CNRS UMR5292), Université Claude-Bernard",
+      "url": "http://www-crnl.univ-lyon1.fr/",
+      "city": "Lyon",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "gin",
+    "fields": {
+      "name": "Grenoble Institut des Neurosciences",
+      "url": "https://neurosciences.univ-grenoble-alpes.fr/",
+      "city": "Grenoble",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "ims",
+    "fields": {
+      "name": "Laboratoire de l'Intégration du Matériau au Système",
+      "url": "https://www.ims-bordeaux.fr/",
+      "city": "Bordeaux",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "inria-bordeaux",
+    "fields": {
+      "name": "Institut des Maladies Neurodégénératives",
+      "url": "http://www.inria.fr/en/teams/mnemosyne",
+      "city": "Bordeaux",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "inria-sophia",
+    "fields": {
+      "name": "INRIA / Université Côte d’Azur",
+      "url": "https://team.inria.fr/biovision/",
+      "city": "Sophia Antipolis",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "ins",
+    "fields": {
+      "name": "Institut de Neurosciences des Systèmes (UMR1106), Inserm et Aix-Marseille Université",
+      "url": "http://ins.univ-amu.fr",
+      "city": "Marseille",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "institut-vision",
+    "fields": {
+      "name": "Institut de la Vision",
+      "url": "http://www.institut-vision.org/",
+      "city": "Paris",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "int",
+    "fields": {
+      "name": "Institut de Neurosciences de la Timone",
+      "url": "http://www.int.univ-amu.fr/",
+      "city": "Marseille",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "lpnc",
+    "fields": {
+      "name": "Laboratoire de Psychologie et NeuroCognition (UMR5105)",
+      "url": "http://lpnc.univ-grenoble-alpes.fr/",
+      "city": "Grenoble",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "map5",
+    "fields": {
+      "name": "Mathématiques Appliquées à Paris 5 (MAP5-UMR 8145)",
+      "url": "http://map5.mi.parisdescartes.fr/",
+      "city": "Paris",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "neurospin",
+    "fields": {
+      "name": "NeuroSpin",
+      "url": "http://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx",
+      "city": "Saclay",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "sbri",
+    "fields": {
+      "name": "Stem-cell and Brain Research Institute",
+      "url": "http://www.sbri.fr/",
+      "city": "Lyon",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "unic",
+    "fields": {
+      "name": "UNIC, CNRS FRE 3693",
+      "url": "https://www.unic.cnrs-gif.fr/",
+      "city": "Gif-sur-Yvette",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "unis",
+    "fields": {
+      "name": "Unité de Neurobiologie des canaux Ioniques et de la Synapse (INSERM - Aix-Marseille Université, UMR_S 1072)",
+      "url": "http://unis-neuro.com",
+      "city": "Marseille",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "VisAGeS",
+    "fields": {
+      "name_en": "Vision, Action and information manaGement System in health",
+      "name_fr": "Vision, Action and information manaGement System in health",
+      "description_en": "Unit/Project VisAGeS – U1228 (ex U746) is the only one research team jointly awarded by INSERM (National Institute of Health and Medical Research) and INRIA (National Institute of Research in Informatics and Automation). VisAGeS belongs to the IRISA institute (UMR CNRS 6074, University of Rennes I) located at Rennes, France on both medical and physical sciences campus.\r\n\r\nSince 70’s, medical imaging is a very rapidly growing research domain, the last three decades have shown a rapid evolution of the dimension and quantity of data physicians have to work with. The next decade will follow this evolution by adding not only new spatio-temporal dimensions to the image data produced and used in a clinical environment but also new scales of analysis (nano or micro biological and molecular images to macros medical images). Another evolution will also consist in adding new effectors during image guided interventional procedures (surgery, interventional radiology…). The classical way of making use of these images, mostly based on human interpretation, becomes less and less feasible. In addition, the societal pressure for a cost effective use of the equipments on the one hand, and a better traceability and quality insurance of the decision making process on the other hand, makes the development of advanced computer assisted medical imaging systems more and more essential.\r\n\r\nAccording to this context, our research team is devoted to the development of new processing algorithms in the context of medical image computing and computer assisted interventions: image fusion (registration and visualization), image segmentation and analysis, management of image related information…). In this very large domain, our work are primarily focused on clinical applications and for the most part on head and brain related diseases.",
+      "description_fr": "",
+      "lab": "IRISA",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "as2n",
+    "fields": {
+      "name_en": "AS2N",
+      "name_fr": "AS2N",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "ims",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "barbier",
+    "fields": {
+      "name_en": "Neuroimagerie fonctionnelle et perfusion cérébrale",
+      "name_fr": "Functional neuroimaging and brain perfusion",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "gin",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "benosman",
+    "fields": {
+      "name_en": "Vision and natural computation",
+      "name_fr": "Vision and natural computation",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "institut-vision",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "biovision",
+    "fields": {
+      "name_en": "Equipe Biovision",
+      "name_fr": "Biovision team",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "inria-sophia",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "brette",
+    "fields": {
+      "name_en": "Computational neuroscience of sensory systems",
+      "name_fr": "Neurosciences computationnelles des systèmes sensoriels",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "institut-vision",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "cognisciences",
+    "fields": {
+      "name_en": "Cognisciences: intégration et plasticité synaptique dans le cortex visuel",
+      "name_fr": "Cognisciences: synaptic integration and functional plasticity in primary visual cortex",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "unic",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "davison",
+    "fields": {
+      "name_en": "Neuroinformatics for data-driven modeling and neuromorphic computing",
+      "name_fr": "Neuroinformatics for data-driven modeling and neuromorphic computing",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "unic",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "destexhe",
+    "fields": {
+      "name_en": "Oscillatory and stochastic dynamics in thalamo-cortical networks",
+      "name_fr": "Dynamique oscillante et stochastique des réseaux thalamocorticaux",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "unic",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "dominey",
+    "fields": {
+      "name_en": "Human and robot cognitive systems",
+      "name_fr": "Human and robot cognitive systems",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "sbri",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "goaillard",
+    "fields": {
+      "name_en": "Robustesse de l'excitabilité",
+      "name_fr": "Robustness of excitability",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "unis",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "invibe",
+    "fields": {
+      "name_en": "Inférence et comportements visuels",
+      "name_fr": "Inference in visual behaviours",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "int",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "irmf",
+    "fields": {
+      "name_en": "Centre IRMf",
+      "name_fr": "fMRI Centre",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "int",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "jirsa",
+    "fields": {
+      "name_en": "Theoretical Neurosciences Group",
+      "name_fr": "Groupe ‘Neurosciences Théoriques’",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "ins",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "maos",
+    "fields": {
+      "name_en": "Mémoire et apprentissage des objets et des scènes",
+      "name_fr": "Memory and learning of objects and scenes",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "cerco",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "mnemosyne",
+    "fields": {
+      "name_en": "MNEMOSYNE",
+      "name_fr": "MNEMOSYNE",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "inria-bordeaux",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "parietal",
+    "fields": {
+      "name_en": "Parietal",
+      "name_fr": "Parietal",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "neurospin",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "picaud",
+    "fields": {
+      "name_en": "Retinal information processing - Pharmacology and Pathology",
+      "name_fr": "Transmission de l’information visuelle, pharmacotoxicité rétinienne et neuroprotection",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "institut-vision",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "psm",
+    "fields": {
+      "name_en": "Perception et sensori-motricité",
+      "name_fr": "Perception and sensory motor research",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "lpnc",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "ravel-buonviso",
+    "fields": {
+      "name_en": "Coding and Memory in Olfaction",
+      "name_fr": "Codage et mémoire olfactive",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "crnl",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "stats-map5",
+    "fields": {
+      "name_en": "Statistique",
+      "name_fr": "Statistics",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "map5",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "antolik",
+    "fields": {
+      "orcid": "",
+      "last_name": "Antolik",
+      "first_name": "Jan",
+      "middle_initials": "",
+      "email": "antolikjan@gmail.com",
+      "title": "",
+      "team": "benosman",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "anton",
+    "fields": {
+      "orcid": "",
+      "last_name": "Anton",
+      "first_name": "Jean-Luc",
+      "middle_initials": "",
+      "email": "Jean-Luc.Anton@univ-amu.fr",
+      "title": "",
+      "team": "irmf",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "baudot",
+    "fields": {
+      "orcid": "",
+      "last_name": "Baudot",
+      "first_name": "Pierre",
+      "middle_initials": "",
+      "email": "pierre.baudot@gmail.com",
+      "title": "",
+      "team": "goaillard",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "benosman",
+    "fields": {
+      "orcid": "",
+      "last_name": "Benosman",
+      "first_name": "Ryad",
+      "middle_initials": "",
+      "email": "ryad.benosman@upmc.fr",
+      "title": "",
+      "team": "benosman",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "brette",
+    "fields": {
+      "orcid": "",
+      "last_name": "Brette",
+      "first_name": "Romain",
+      "middle_initials": "",
+      "email": "romain.brette@inserm.fr",
+      "title": "",
+      "team": "brette",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "cessac",
+    "fields": {
+      "orcid": "",
+      "last_name": "Cessac",
+      "first_name": "Bruno",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "biovision",
+      "is_team_leader": true,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "davison",
+    "fields": {
+      "orcid": "0000-0002-4793-7541",
+      "last_name": "Davison",
+      "first_name": "Andrew",
+      "middle_initials": "",
+      "email": "andrew.davison@unic.cnrs-gif.fr",
+      "title": "",
+      "team": "davison",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "These are my research interests...",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": "photos/Andrew_2.jpg"
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "destexhe",
+    "fields": {
+      "orcid": "",
+      "last_name": "Destexhe",
+      "first_name": "Alain",
+      "middle_initials": "",
+      "email": "destexhe@unic.cnrs-gif.fr",
+      "title": "",
+      "team": "destexhe",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "dojat",
+    "fields": {
+      "orcid": "",
+      "last_name": "Dojat",
+      "first_name": "Michel",
+      "middle_initials": "",
+      "email": "Michel.Dojat@ujf-grenoble.fr",
+      "title": "",
+      "team": "barbier",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "dominey",
+    "fields": {
+      "orcid": "",
+      "last_name": "Dominey",
+      "first_name": "Peter Ford",
+      "middle_initials": "",
+      "email": "peter.dominey@inserm.fr",
+      "title": "",
+      "team": "dominey",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "engemann",
+    "fields": {
+      "orcid": "",
+      "last_name": "Engemann",
+      "first_name": "Denis",
+      "middle_initials": "",
+      "email": "denis.engemann@gmail.com",
+      "title": "",
+      "team": "parietal",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "fregnac",
+    "fields": {
+      "orcid": "",
+      "last_name": "Frégnac",
+      "first_name": "Yves",
+      "middle_initials": "",
+      "email": "fregnac@unic.cnrs-gif.fr",
+      "title": "",
+      "team": "cognisciences",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "garcia",
+    "fields": {
+      "orcid": "",
+      "last_name": "Garcia",
+      "first_name": "Samuel",
+      "middle_initials": "",
+      "email": "samuel.garcia@cnrs.fr",
+      "title": "",
+      "team": "ravel-buonviso",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "gramfort",
+    "fields": {
+      "orcid": "",
+      "last_name": "Gramfort",
+      "first_name": "Alexandre",
+      "middle_initials": "",
+      "email": "alexandre.gramfort@inria.fr",
+      "title": "",
+      "team": "parietal",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "jirsa",
+    "fields": {
+      "orcid": "",
+      "last_name": "Jirsa",
+      "first_name": "Viktor",
+      "middle_initials": "",
+      "email": "viktor.jirsa@univ-amu.fr",
+      "title": "",
+      "team": "jirsa",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "kornprobst",
+    "fields": {
+      "orcid": "",
+      "last_name": "Kornprobst",
+      "first_name": "Pierre",
+      "middle_initials": "",
+      "email": "pierre.kornprobst@inria.fr",
+      "title": "",
+      "team": "biovision",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "marre",
+    "fields": {
+      "orcid": "",
+      "last_name": "Marre",
+      "first_name": "Olivier",
+      "middle_initials": "",
+      "email": "olivier.marre@gmail.com",
+      "title": "",
+      "team": "picaud",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "maumet",
+    "fields": {
+      "orcid": "0000-0002-6290-553X",
+      "last_name": "Maumet",
+      "first_name": "Camille",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "VisAGeS",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "mermillod",
+    "fields": {
+      "orcid": "",
+      "last_name": "Mermillod",
+      "first_name": "Martial",
+      "middle_initials": "",
+      "email": "martial.mermillod@upmf-grenoble.fr",
+      "title": "",
+      "team": "psm",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "perrinet",
+    "fields": {
+      "orcid": "",
+      "last_name": "Perrinet",
+      "first_name": "Laurent",
+      "middle_initials": "",
+      "email": "laurent.perrinet@gmail.com",
+      "title": "",
+      "team": "invibe",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "pouzat",
+    "fields": {
+      "orcid": "",
+      "last_name": "Pouzat",
+      "first_name": "Christoph",
+      "middle_initials": "",
+      "email": "christophe.pouzat@ovh.fr",
+      "title": "",
+      "team": "stats-map5",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "rougier",
+    "fields": {
+      "orcid": "",
+      "last_name": "Rougier",
+      "first_name": "Nicolas",
+      "middle_initials": "",
+      "email": "Nicolas.Rougier@inria.fr",
+      "title": "",
+      "team": "mnemosyne",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "saighi",
+    "fields": {
+      "orcid": "",
+      "last_name": "Saïghi",
+      "first_name": "Sylvain",
+      "middle_initials": "",
+      "email": "sylvain.saighi@ims-bordeaux.fr",
+      "title": "",
+      "team": "as2n",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "stimberg",
+    "fields": {
+      "orcid": "",
+      "last_name": "Stimberg",
+      "first_name": "Marcel",
+      "middle_initials": "",
+      "email": "marcel.stimberg@inserm.fr",
+      "title": "",
+      "team": "brette",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "telenczuk",
+    "fields": {
+      "orcid": "",
+      "last_name": "Telenczuk",
+      "first_name": "Bartosz",
+      "middle_initials": "",
+      "email": "bartosz.telenczuk@unic.cnrs-gif.fr",
+      "title": "",
+      "team": "destexhe",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "thirion",
+    "fields": {
+      "orcid": "",
+      "last_name": "Thirion",
+      "first_name": "Bertrand",
+      "middle_initials": "",
+      "email": "bertrand.thirion@inria.fr",
+      "title": "",
+      "team": "parietal",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "thorpe",
+    "fields": {
+      "orcid": "",
+      "last_name": "Thorpe",
+      "first_name": "Simon",
+      "middle_initials": "",
+      "email": "simon.thorpe@cerco.ups-tlse.fr",
+      "title": "",
+      "team": "maos",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "varoquaux",
+    "fields": {
+      "orcid": "",
+      "last_name": "Varoquaux",
+      "first_name": "Gaël",
+      "middle_initials": "",
+      "email": "gael.varoquaux@normalesup.org",
+      "title": "",
+      "team": "parietal",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "vieville",
+    "fields": {
+      "orcid": "",
+      "last_name": "Viéville",
+      "first_name": "Thierry",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "mnemosyne",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "woodman",
+    "fields": {
+      "orcid": "",
+      "last_name": "Woodman",
+      "first_name": "Marmaduke",
+      "middle_initials": "",
+      "email": "marmaduke.woodman@univ-amu.fr",
+      "title": "",
+      "team": "jirsa",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "yger",
+    "fields": {
+      "orcid": "",
+      "last_name": "Yger",
+      "first_name": "Pierre",
+      "middle_initials": "",
+      "email": "pierre.yger@inserm.fr",
+      "title": "",
+      "team": "brette",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "Brian",
+    "fields": {
+      "name": "Brian",
+      "short_description_en": "Brian is a free, open source simulator for spiking neural networks",
+      "short_description_fr": "",
+      "long_description_en": "Brian is a free, open source simulator for spiking neural networks. It is written in the Python programming language and is available on almost all platforms. We believe that a simulator should not only save the time of processors, but also the time of scientists. Brian is therefore designed to be easy to learn and use, highly flexible and easily extensible.",
+      "long_description_fr": "",
+      "logo": "photos/brian_logo_1.png",
+      "licence": "CeCILL Free Software License Agreement v2.1",
+      "documentation": "http://brian2.readthedocs.io/en/stable/index.html",
+      "download": "https://pypi.python.org/pypi/Brian2",
+      "source_code": "https://github.com/brian-team/brian2",
+      "members": [
+        "brette",
+        "stimberg"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "Elephant",
+    "fields": {
+      "name": "Elephant",
+      "short_description_en": "Elephant is a package for the analysis of neurophysiology data, using Neo data structures.",
+      "short_description_fr": "",
+      "long_description_en": "Elephant (Electrophysiology Analysis Toolkit) is an open-source, community centered library for the analysis of electrophysiological data in the Python programming language. The focus of Elephant is on generic analysis functions for spike train data and time series recordings from electrodes, such as the local field potentials (LFP) or intracellular voltages. In addition to providing a common platform for analysis code from different laboratories, the Elephant project aims to provide a consistent and homogeneous analysis framework that is built on a modular foundation. Elephant is the direct successor to Neurotools and maintains ties to complementary projects such as OpenElectrophy and spykeviewer.",
+      "long_description_fr": "",
+      "logo": "photos/elephant_logo_sidebar.png",
+      "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "documentation": "http://elephant.readthedocs.org/",
+      "download": "https://pypi.python.org/packages/source/e/elephant/elephant-0.2.0.tar.gz#md5=c3cdefebe88e8b6f8379be254267b1db",
+      "source_code": "https://github.com/NeuralEnsemble/elephant",
+      "members": [
+        "davison"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "MNE",
+    "fields": {
+      "name": "MNE",
+      "short_description_en": "Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python",
+      "short_description_fr": "",
+      "long_description_en": "MNE-Python software is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological data such as MEG, EEG, sEEG, ECoG, and more. It includes modules for data input/output, preprocessing, visualization, source estimation, time-frequency analysis, connectivity analysis, machine learning, and statistics.",
+      "long_description_fr": "",
+      "logo": "photos/68747470733a2f2f6d617274696e6f732e6f72672f6d6e652f737461626c652f5f7374617469632f6_lqAXDs1.png",
+      "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "documentation": "http://martinos.org/mne/",
+      "download": "",
+      "source_code": "https://github.com/mne-tools/mne-python",
+      "members": [
+        "engemann",
+        "gramfort"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "MotionClouds",
+    "fields": {
+      "name": "MotionClouds",
+      "short_description_en": "Synthesizing moving textures tailored to study motion detection.",
+      "short_description_fr": "Synthesizing moving textures tailored to study motion detection.",
+      "long_description_en": "MotionClouds are random dynamic stimuli optimized to study motion perception.\n\nIn particular, these stimuli can be made closer to naturalistic textures compared to usual stimuli such as gratings and random-dot kinetograms. These have controlled information content: We simplified the definition to parametrically define these \"Motion Clouds\" around the most prevalent feature axis (mean and bandwith): direction, scale (spatial frequency), orientation. These scripts implement a framework to generate these random texture movies.",
+      "long_description_fr": "",
+      "logo": "photos/grating.gif",
+      "licence": "",
+      "documentation": "http://motionclouds.invibe.net",
+      "download": "",
+      "source_code": "https://github.com/NeuralEnsemble/MotionClouds",
+      "members": [
+        "perrinet"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "NIDM",
+    "fields": {
+      "name": "Neuroimaging Data Model",
+      "short_description_en": "A model to represent neuroimaging data with their metadata in support of data sharing and reuse!",
+      "short_description_fr": "A model to represent neuroimaging data with their metadata in support of data sharing and reuse!",
+      "long_description_en": "The Neuroimaging Data Model (NIDM) is a collection of specification documents that define extensions the the W3C PROV standard for the domain of human brain mapping. NIDM uses provenance information as means to link components from different stages of the scientific research process from dataset descriptors and computational workflow, to derived data and publication. \n\n<img alt=\"NIDM Component Layer Cake\" src=\"http://nidm.nidash.org/specs/img/nidm-layer-cake.png\" width=\"60%\">",
+      "long_description_fr": "",
+      "logo": "photos/nidm-layer-cake.png",
+      "licence": "Apache License 2.0",
+      "documentation": "http://nidm.nidash.org",
+      "download": "",
+      "source_code": "https://github.com/incf-nidash/nidm-specs",
+      "members": [
+        "maumet"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "Neo",
+    "fields": {
+      "name": "Neo",
+      "short_description_en": "Neo is a package for representing electrophysiology data in Python, together with support for reading a wide range of neurophysiology file formats.",
+      "short_description_fr": "",
+      "long_description_en": "Neo is a package for representing electrophysiology data in Python, together with support for reading a wide range of neurophysiology file formats, including Spike2, NeuroExplorer, AlphaOmega, Axon, Blackrock, Plexon, Tdt, and support for writing to a subset of these formats plus non-proprietary formats including HDF5.\nThe goal of Neo is to improve interoperability between Python tools for analyzing, visualizing and generating electrophysiology data (such as OpenElectrophy, NeuroTools, G-node, Helmholtz, PyNN) by providing a common, shared object model. In order to be as lightweight a dependency as possible, Neo is deliberately limited to represention of data, with no functions for data analysis or visualization.\n\nNeo implements a hierarchical data model well adapted to intracellular and extracellular electrophysiology and EEG data with support for multi-electrodes (for example tetrodes). Neo’s data objects build on the quantities package, which in turn builds on NumPy by adding support for physical dimensions. Thus Neo objects behave just like normal NumPy arrays, but with additional metadata, checks for dimensional consistency and automatic unit conversion.",
+      "long_description_fr": "",
+      "logo": "photos/neologoshort_small_1.png",
+      "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "documentation": "http://neo.readthedocs.org/",
+      "download": "http://pypi.python.org/pypi/neo/",
+      "source_code": "https://github.com/NeuralEnsemble/python-neo",
+      "members": [
+        "davison",
+        "garcia"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "PRANAS",
+    "fields": {
+      "name": "PRANAS",
+      "short_description_en": "A new platform for retinal analysis and simulation.",
+      "short_description_fr": "A new platform for retinal analysis and simulation.",
+      "long_description_en": "The retina encodes visual scenes by trains of action potentials that are sent to the brain via the optic nerve. This software called PRANAS (Platform for Retinal ANalysis And Simulation) is a free access user-end software allowing to better understand this coding. PRANAS targets neuroscientists and modelers by providing a unique set of retina-related tools. PRANAS integrates a retina simulator allowing large scale simulations while keeping a strong biological plausibility and a toolbox for the analysis of spike train population statistics. The statistical method (entropy maximization under constraints) takes into account both spatial and temporal correlations as constraints, allowing to analyze the effects of memory on statistics. PRANAS also integrates a tool computing and representing in 3D (time-space) receptive fields. All these tools are accessible through a friendly graphical user interface. The most CPU-costly of them has been implemented to run in parallel.",
+      "long_description_fr": "",
+      "logo": "",
+      "licence": "",
+      "documentation": "http://journal.frontiersin.org/article/10.3389/fninf.2017.00049",
+      "download": "https://team.inria.fr/biovision/pranas-software-license/",
+      "source_code": "",
+      "members": [
+        "cessac",
+        "kornprobst",
+        "vieville"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "PyHRF",
+    "fields": {
+      "name": "PyHRF",
+      "short_description_en": "PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.",
+      "short_description_fr": "PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.",
+      "long_description_en": "PyHRF is a set of tools for within-subject fMRI data analysis, focused on the characterization of the hemodynamics.\n\nWithin the chain of fMRI data processing, these tools provide alternatives to the classical within-subject GLM fitting procedure. The inputs are preprocessed images (except spatial smoothing) and the outputs are the contrast maps and the HRF estimates.\n\nThe package is mainly written in Python and provides the implementation of the two following methods:\n\n- The joint-detection estimation (JDE) approach, which divides the brain into functionally homogeneous regions and provides one HRF estimate per region as well as response levels specific to each voxel and each experimental condition. This method embeds a temporal regularization on the estimated HRFs and an adaptive spatial regularization on the response levels.\n- The Regularized Finite Impulse Response (RFIR) approach, which provides HRF estimates for each voxel and experimental conditions. This method embeds a temporal regularization on the HRF shapes, but proceeds independently across voxels (no spatial model). See Introduction for a more detailed overview.",
+      "long_description_fr": "",
+      "logo": "photos/pyhrf_teaser.png",
+      "licence": "CeCILL Free Software License Agreement v2.1",
+      "documentation": "https://pyhrf.github.io",
+      "download": "",
+      "source_code": "https://github.com/pyhrf/pyhrf",
+      "members": [
+        "dojat"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "PyNN",
+    "fields": {
+      "name": "PyNN",
+      "short_description_en": "A Python package for simulator-independent specification of neuronal network models.",
+      "short_description_fr": "",
+      "long_description_en": "PyNN (pronounced 'pine') is a simulator-independent language for building neuronal network models.\n\nIn other words, you can write the code for a model once, using the PyNN API and the Python programming language, and then run it without modification on any simulator that PyNN supports (currently [NEURON](http://www.neuron.yale.edu/neuron/), NEST, and Brian), and on the SpiNNaker and BrainScaleS neuromorphic hardware systems.\n\nThe PyNN API aims to support modelling at a high-level of abstraction (populations of neurons, layers, columns and the connections between them) while still allowing access to the details of individual neurons and synapses when required. PyNN provides a library of standard neuron, synapse and synaptic plasticity models, which have been verified to work the same on the different supported simulators. PyNN also provides a set of commonly-used connectivity algorithms (e.g. all-to-all, random, distance-dependent, small-world) but makes it easy to provide your own connectivity in a simulator-independent way, either using the Connection Set Algebra ([Djurfeldt, 2010](http://software.incf.org/software/csa/)) or by writing your own Python code.\n\nEven if you don't wish to run simulations on multiple simulators, you may benefit from writing your simulation code using PyNN's powerful, high-level interface. In this case, you can use any neuron or synapse model supported by your simulator, and are not restricted to the standard models.\n\n### Citing PyNN\n\nIf you publish work using or mentioning PyNN, we would appreciate it if you would cite the following paper:\n\nDavison AP, Brüderle D, Eppler JM, Kremkow J, Muller E, Pecevski DA, Perrinet L and Yger P (2009) PyNN: a common interface for neuronal network simulators. *Frontiers in Neuroinformatics* 2:11 [doi:10.3389/neuro.11.011.2008](http://doi.org/10.3389/neuro.11.011.2008)",
+      "long_description_fr": "",
+      "logo": "photos/pynn_logo_sq.png",
+      "licence": "CeCILL Free Software License Agreement v2.0",
+      "documentation": "http://neuralensemble.org/docs/PyNN/",
+      "download": "https://pypi.org/project/PyNN/",
+      "source_code": "https://github.com/NeuralEnsemble/PyNN/",
+      "members": [
+        "davison",
+        "yger"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "ReScience",
+    "fields": {
+      "name": "ReScience",
+      "short_description_en": "",
+      "short_description_fr": "The ReScience journal. Reproducible Science is Good. Replicated Science is better.",
+      "long_description_en": "ReScience is a peer-reviewed journal that targets computational research and encourages the explicit replication of already published research promoting new and open-source implementations in order to ensure the original research is reproducible. To achieve such a goal, the whole editing chain is radically different from any other traditional scientific journal. ReScience lives on github where each new implementation is made available together with the comments, explanations and tests. Each submission takes the form of a pull request that is publicly reviewed and tested in order to guarantee any researcher can re-use it. If you ever replicated computational result from the literature, ReScience is the perfect place to publish this new implementation. Reproducible Science is Good. Replicated Science is better.",
+      "long_description_fr": "",
+      "logo": "photos/rescience-logo.png",
+      "licence": "Creative Commons Attribution 4.0 International",
+      "documentation": "https://rescience.github.io",
+      "download": "",
+      "source_code": "https://github.com/ReScience",
+      "members": [
+        "rougier"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "SpikeNet",
+    "fields": {
+      "name": "SpikeNet",
+      "short_description_en": "",
+      "short_description_fr": "",
+      "long_description_en": "",
+      "long_description_fr": "",
+      "logo": "",
+      "licence": "",
+      "documentation": "",
+      "download": "",
+      "source_code": "",
+      "members": [
+        "thorpe"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "SpykingCircus",
+    "fields": {
+      "name": "Spyking Circus",
+      "short_description_en": "Fast and scalable spike sorting in Python",
+      "short_description_fr": "",
+      "long_description_en": "The SpyKING CIRCUS is a massively parallel code to perform semi automatic spike sorting on large extra-cellular recordings. Using a smart clustering and a greedy template matching approach, the code can solve the problem of overlapping spikes, and has been tested both for in vitro and in vivo data, from tens of channels to up to 4225 channels. Results are very good, cross-validated on several datasets, and details of the algorithm can be found in the following publication: [https://elifesciences.org/articles/34518](https://elifesciences.org/articles/34518). Note that the datasets used in the paper are freely available on [Zenodo](https://zenodo.org/record/1205233/export/hx#.WrORP3XwaV4) if you want to try/benchmark your own spike sorting algorithms.",
+      "long_description_fr": "",
+      "logo": "photos/circus.png",
+      "licence": "CeCILL Free Software License Agreement v2.1",
+      "documentation": "https://spyking-circus.readthedocs.io/",
+      "download": "",
+      "source_code": "https://github.com/spyking-circus/spyking-circus",
+      "members": [
+        "marre",
+        "yger"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "TheVirtualBrain",
+    "fields": {
+      "name": "The Virtual Brain",
+      "short_description_en": "TheVirtualBrain is a framework for the simulation of the dynamics of large-scale brain networks with biologically realistic connectivity.",
+      "short_description_fr": "",
+      "long_description_en": "TheVirtualBrain is a framework for the simulation of the dynamics of large-scale brain networks with biologically realistic connectivity. TheVirtualBrain uses tractographic data (DTI/DSI) to generate connectivity matrices and build cortical and subcortical brain networks. The connectivity matrix defines the connection strengths and time delays via signal transmission between all network nodes. Various neural mass models are available in the repertoire of TheVirtualBrain and define the dynamics of a network node. Together, the neural mass models at the network nodes and the connectivity matrix define the Virtual Brain. TheVirtualBrain simulates and generates the time courses of various forms of neural activity including Local Field Potentials (LFP) and firing rate, as well as brain imaging data such as EEG, MEG and BOLD activations as observed in fMRI.\n\nTheVirtualBrain is foremost a scientific simulation platform and provides all means necessary to generate, manipulate and visualize connectivity and network dynamics. In addition, TheVirtualBrain comprises a set of classical time series analysis tools, structural and functional connectivity analysis tools, as well as parameter exploration facilities by launching parallel simulations on a cluster.",
+      "long_description_fr": "",
+      "logo": "photos/TVB_logo.svg",
+      "licence": "GNU General Public License v3.0 or later",
+      "documentation": "http://docs.thevirtualbrain.org/",
+      "download": "https://www.thevirtualbrain.org/tvb/zwei/brainsimulator-software",
+      "source_code": "https://github.com/the-virtual-brain/tvb-framework",
+      "members": [
+        "jirsa",
+        "woodman"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "Tridesclous",
+    "fields": {
+      "name": "Tridesclous",
+      "short_description_en": "Spike sorting with a French touch.",
+      "short_description_fr": "Spike sorting with a French touch.",
+      "long_description_en": "tris des clous is a very dishonest translation of spike sorting to French.\r\n\r\nPronouce it [tree day clue] in English.\r\n\r\nThe primary goal of tridesclous is to provide a toolkit to teach good practices in spike sorting techniques. This tools is now mature and can be used for experimental data.\r\n\r\nThe forest of spike sorting tools is dense and tridesclous is a new tree. Be curious and try it.",
+      "long_description_fr": "",
+      "logo": "photos/main_icon.png",
+      "licence": "MIT License",
+      "documentation": "http://tridesclous.readthedocs.io/",
+      "download": "",
+      "source_code": "https://github.com/tridesclous/tridesclous",
+      "members": [
+        "garcia",
+        "pouzat"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "mozaik",
+    "fields": {
+      "name": "Mozaik",
+      "short_description_en": "An integrated workflow framework for large scale neural simulations.",
+      "short_description_fr": "An integrated workflow framework for large scale neural simulations.",
+      "long_description_en": "Mozaik is intended to improve the efficiency of computational neuroscience projects by relieving users from writing boilerplate code for projects involving complex heterogenous neural network models, complex stimulation and experimental protocols and subsequent analysis and plotting.\n\nIt is built on top of the following tools:\n\n- PyNN (for simulator independent neural network model definition)\n- Neo (for exchange and internal representation of data)\n- matplotib (for plotting)\n\nMozaik currently covers the following main areas of the neural simulation workflow:\n\n- High-level components for definition of topologically organized spiking networks (built on top of PyNN)\n- Experiment control (description and execution of experiments)\n- Stimulus definition framework\n- Data storage (storage of recordings and analysis results)\n- Data manipulation (a query based system for performing high-level filtering operations over the datastore)\n- Analysis module\n- Plotting module",
+      "long_description_fr": "",
+      "logo": "photos/mozaik_logo_small.png",
+      "licence": "CeCILL Free Software License Agreement v2.0",
+      "documentation": "http://neuralensemble.org/docs/mozaik/",
+      "download": "http://pypi.python.org/pypi/mozaik",
+      "source_code": "https://github.com/antolikjan/mozaik.git",
+      "members": [
+        "antolik",
+        "davison"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "nilearn",
+    "fields": {
+      "name": "Nilearn",
+      "short_description_en": "Machine learning for NeuroImaging in Python.",
+      "short_description_fr": "Machine learning for NeuroImaging in Python.",
+      "long_description_en": "Nilearn is a Python module for fast and easy statistical learning on NeuroImaging data.\n\nIt leverages the [scikit-learn](http://scikit-learn.org/) Python toolbox for multivariate statistics with applications such as predictive modelling, classification, decoding, or connectivity analysis.",
+      "long_description_fr": "",
+      "logo": "photos/nilearn-logo.png",
+      "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "documentation": "http://nilearn.github.io",
+      "download": "",
+      "source_code": "https://github.com/nilearn/nilearn",
+      "members": [
+        "thirion",
+        "varoquaux"
+      ]
+    }
+  },
+  {
+    "model": "directory.project",
+    "pk": "nipy",
+    "fields": {
+      "name": "NIPY",
+      "short_description_en": "NIPY is a Python project for analysis of structural and functional neuroimaging data.",
+      "short_description_fr": "NIPY is a Python project for analysis of structural and functional neuroimaging data.",
+      "long_description_en": "Neuroimaging tools for Python.\n\nThe aim of NIPY is to produce a platform-independent Python environment for the analysis of functional brain imaging data using an open development model.\n\nIn NIPY we aim to:\n\n- Provide an open source, mixed language scientific programming environment suitable for rapid development.\n- Create software components in this environment to make it easy to develop tools for MRI, EEG, PET and other modalities.\n- Create and maintain a wide base of developers to contribute to this platform.\n- To maintain and develop this framework as a single, easily installable bundle.",
+      "long_description_fr": "",
+      "logo": "photos/reggie2.png",
+      "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "documentation": "http://nipy.org/nipy",
+      "download": "",
+      "source_code": "https://github.com/nipy/nipy",
+      "members": [
+        "thirion",
+        "varoquaux"
+      ]
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "neuroinf.fr",
+      "name": "neuroinf.fr"
+    }
+  },
+  {
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+      "provider": "orcid",
+      "name": "Orcid",
+      "client_id": "APP-WU9RIM0TOAUELF8R",
+      "secret": "a23a252d-7b97-4e2b-81f6-80c3e44986f7",
+      "key": "",
+      "sites": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "socialaccount.socialaccount",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "provider": "orcid",
+      "uid": "0000-0002-4793-7541",
+      "last_login": "2018-06-01T09:01:38.817Z",
+      "date_joined": "2018-06-01T08:09:08.072Z",
+      "extra_data": "{\"orcid-identifier\": {\"uri\": \"https://orcid.org/0000-0002-4793-7541\", \"path\": \"0000-0002-4793-7541\", \"host\": \"orcid.org\"}, \"preferences\": {\"locale\": \"EN\"}, \"history\": {\"creation-method\": \"WEBSITE\", \"completion-date\": {\"value\": 1350775840449}, \"submission-date\": {\"value\": 1350766826604}, \"last-modified-date\": {\"value\": 1527843698161}, \"claimed\": true, \"source\": null, \"deactivation-date\": null, \"verified-email\": true, \"verified-primary-email\": true}, \"person\": {\"last-modified-date\": {\"value\": 1517873256636}, \"name\": {\"created-date\": {\"value\": 1460759641206}, \"last-modified-date\": {\"value\": 1460759641206}, \"given-names\": {\"value\": \"Andrew\"}, \"family-name\": {\"value\": \"Davison\"}, \"credit-name\": {\"value\": \"Andrew P. Davison\"}, \"source\": null, \"visibility\": \"PUBLIC\", \"path\": \"0000-0002-4793-7541\"}, \"other-names\": {\"last-modified-date\": null, \"other-name\": [], \"path\": \"/0000-0002-4793-7541/other-names\"}, \"biography\": null, \"researcher-urls\": {\"last-modified-date\": null, \"researcher-url\": [], \"path\": \"/0000-0002-4793-7541/researcher-urls\"}, \"emails\": {\"last-modified-date\": null, \"email\": [], \"path\": \"/0000-0002-4793-7541/email\"}, \"addresses\": {\"last-modified-date\": null, \"address\": [], \"path\": \"/0000-0002-4793-7541/address\"}, \"keywords\": {\"last-modified-date\": {\"value\": 1372104829385}, \"keyword\": [{\"created-date\": {\"value\": 1372104829385}, \"last-modified-date\": {\"value\": 1372104829385}, \"source\": {\"source-orcid\": {\"uri\": \"https://orcid.org/0000-0002-4793-7541\", \"path\": \"0000-0002-4793-7541\", \"host\": \"orcid.org\"}, \"source-client-id\": null, \"source-name\": {\"value\": \"Andrew P. Davison\"}}, \"content\": \"neuroinformatics, computational neuroscience\", \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/keywords/1708\", \"put-code\": 1708, \"display-index\": 0}], \"path\": \"/0000-0002-4793-7541/keywords\"}, \"external-identifiers\": {\"last-modified-date\": {\"value\": 1517873256636}, \"external-identifier\": [{\"created-date\": {\"value\": 1372104829385}, \"last-modified-date\": {\"value\": 1517873256636}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"external-id-type\": \"Scopus Author ID\", \"external-id-value\": \"8940202300\", \"external-id-url\": {\"value\": \"http://www.scopus.com/inward/authorDetails.url?authorID=8940202300&partnerID=MN8TOARS\"}, \"external-id-relationship\": \"SELF\", \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/external-identifiers/155328\", \"put-code\": 155328, \"display-index\": 0}], \"path\": \"/0000-0002-4793-7541/external-identifiers\"}, \"path\": \"/0000-0002-4793-7541/person\"}, \"activities-summary\": {\"last-modified-date\": {\"value\": 1453736257740}, \"educations\": {\"last-modified-date\": null, \"education-summary\": [], \"path\": \"/0000-0002-4793-7541/educations\"}, \"employments\": {\"last-modified-date\": null, \"employment-summary\": [], \"path\": \"/0000-0002-4793-7541/employments\"}, \"fundings\": {\"last-modified-date\": null, \"group\": [], \"path\": \"/0000-0002-4793-7541/fundings\"}, \"peer-reviews\": {\"last-modified-date\": null, \"group\": [], \"path\": \"/0000-0002-4793-7541/peer-reviews\"}, \"works\": {\"last-modified-date\": {\"value\": 1453736257740}, \"group\": [{\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1109/MCSE.2012.41\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251304, \"created-date\": {\"value\": 1372104473936}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Automated capture of experiment context for easier reproducibility in computational research\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1109/MCSE.2012.41\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2012\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251304\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.718482\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251305, \"created-date\": {\"value\": 1372104473943}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Collaborative modelling: The future of computational neuroscience?\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.718482\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2012\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251305\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.722743\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251306, \"created-date\": {\"value\": 1372104473950}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Creating, documenting and sharing network models\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.722743\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2012\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251306\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s00422-011-0435-9\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251307, \"created-date\": {\"value\": 1372104473976}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"A comprehensive workflow for general-purpose neural modeling with highly configurable neuromorphic hardware systems\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s00422-011-0435-9\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2011\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251307\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1371/journal.pcbi.1000815\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251308, \"created-date\": {\"value\": 1372104474031}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"NeuroML: A language for describing data driven models of neurons and networks with a high degree of biological detail\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1371/journal.pcbi.1000815\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2010\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251308\", \"display-index\": \"0\"}, {\"put-code\": 9251309, \"created-date\": {\"value\": 1372104474053}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"NeuroML: a language for describing data driven models of neurons and networks with a high degree of biological detail.\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1371/journal.pcbi.1000815\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2010\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251309\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.017.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251328, \"created-date\": {\"value\": 1372104829243}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"Establishing a Novel Modeling Tool: A Python-based Interface for a Neuromorphic Hardware System\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.017.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-5196\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251328\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.001.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251327, \"created-date\": {\"value\": 1372104801740}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"NEURON and Python\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.001.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-5196\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251327\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.0753-09.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251310, \"created-date\": {\"value\": 1372104474076}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Reliable recall of spontaneous activity patterns in cortical networks\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.0753-09.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251310\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.01.036.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251324, \"created-date\": {\"value\": 1372104749559}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"Trends in programming languages for neuroscience simulations\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.01.036.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-4548\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251324\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.011.2008\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251325, \"created-date\": {\"value\": 1372104762382}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"PyNN: a common interface for neuronal network simulators\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.011.2008\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-5196\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2008\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251325\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s10827-007-0038-6\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251311, \"created-date\": {\"value\": 1372104474087}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Simulation of networks of spiking neurons: A review of tools and strategies\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s10827-007-0038-6\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2007\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251311\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1142/S0129065706000524\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251312, \"created-date\": {\"value\": 1372104474123}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Biophysical and phenomenological models of multiple spike interactions in spike-timing dependent plasticity\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1142/S0129065706000524\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2006\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251312\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.5263-05.2006\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251313, \"created-date\": {\"value\": 1372104474138}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Learning cross-modal spatial transformations through spike timing-dependent plasticity\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.5263-05.2006\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2006\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251313\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1385/NI:2:3:327\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251314, \"created-date\": {\"value\": 1372104474145}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Semi-automated population of an online database of neuronal models (ModelDB) with citation information, using PubMed for validation\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1385/NI:2:3:327\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2004\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251314\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1152/jn.00623.2002\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251315, \"created-date\": {\"value\": 1372104474158}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Dendrodendritic inhibition and simulated odor responses in a detailed olfactory bulb network model\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1152/jn.00623.2002\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2003\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251315\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": []}, \"work-summary\": [{\"put-code\": 9251316, \"created-date\": {\"value\": 1372104474167}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"ModelDB: making models publicly accessible to support computational neuroscience.\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": null, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2003\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251316\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0925-2312(01)00391-5\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251317, \"created-date\": {\"value\": 1372104474181}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Spike synchronization in a biophysically-detailed model of the olfactory bulb\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0925-2312(01)00391-5\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2001\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251317\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0361-9230(99)00256-7\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251318, \"created-date\": {\"value\": 1372104474190}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"A reduced compartmental model of the mitral cell for use in network models of the olfactory bulb\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0361-9230(99)00256-7\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2000\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251318\", \"display-index\": \"0\"}]}], \"path\": \"/0000-0002-4793-7541/works\"}, \"path\": \"/0000-0002-4793-7541/activities\"}, \"path\": \"/0000-0002-4793-7541\"}"
+    }
+  },
+  {
+    "model": "socialaccount.socialtoken",
+    "pk": 1,
+    "fields": {
+      "app": 1,
+      "account": 1,
+      "token": "6a71efe9-8a3e-4b16-a841-23a80e858796",
+      "token_secret": "f5cf17e9-7751-4853-b05c-d0035c827d1b",
+      "expires_at": "2038-06-01T05:16:56.249Z"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "icm",
+    "fields": {
+      "name": "Brain and Spine Institute (ICM)",
+      "url": "https://icm-institute.org/",
+      "city": "Paris",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.laboratory",
+    "pk": "cenir",
+    "fields": {
+      "name": "Centre de Neuro-Imagerie de Recherche",
+      "url": "",
+      "city": "Paris",
+      "country": "France"
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "chavane",
+    "fields": {
+      "name_en": "Neuronal operations in visual topographic maps",
+      "name_fr": "",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "int",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "coulon",
+    "fields": {
+      "name_en": "Methods and Computational Anatomy",
+      "name_fr": "",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "int",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "aramis",
+    "fields": {
+      "name_en": "ARAMIS Lab",
+      "name_fr": "",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "icm",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "takerkart",
+    "fields": {
+      "name_en": "Cellule Réseau, Informatique Scientifique",
+      "name_fr": "",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "int",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.team",
+    "pk": "meg-eeg",
+    "fields": {
+      "name_en": "MEG/EEG team",
+      "name_fr": "",
+      "description_en": "",
+      "description_fr": "",
+      "lab": "cenir",
+      "logo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "barillot",
+    "fields": {
+      "orcid": "0000-0002-1589-7696",
+      "last_name": "Barillot",
+      "first_name": "Christian",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "VisAGeS",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "chavane",
+    "fields": {
+      "orcid": "0000-0001-7916-2640",
+      "last_name": "Chavane",
+      "first_name": "Frederic",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "chavane",
+      "is_team_leader": true,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "coulon",
+    "fields": {
+      "orcid": "0000-0003-4752-1228",
+      "last_name": "Coulon",
+      "first_name": "Olivier",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "coulon",
+      "is_team_leader": true,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "durrleman",
+    "fields": {
+      "orcid": "",
+      "last_name": "Durrleman",
+      "first_name": "Stanley",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "aramis",
+      "is_team_leader": true,
+      "position": null,
+      "interests_en": "I am heading the joint Inria/ICM Aramis Lab with O. Colliot at the Brain and Spine Institute (ICM) located within the Pitié-Salpêtrière hospital in Paris. I am also the coordinator of the ICM Center of Neuroinformatics, and scientific director of the ICM platform of biostatistics and bioinformatics. My team focuses on the development of new statistical and computational approaches for the analysis of image data and image-derived geometric data such a surface meshes. We have contributed to the definition of statistical analysis methods for spatiotemporal measurements in longitudinal studies, where sets of geometric objects (or structured data) are observed at multiple points in time. Our research is essentially motivated by, and applied to the study of the structure and function of the human brain. It makes accessible the wealth and complexity of information contained in multiple modalities of medical images via virtual representations of the brain, and allows the tracking of these representations during ageing or disease progression.",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "kain",
+    "fields": {
+      "orcid": "",
+      "last_name": "Kain",
+      "first_name": "Michael",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "VisAGeS",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "takerkart",
+    "fields": {
+      "orcid": "0000-0001-8410-0962",
+      "last_name": "Takerkart",
+      "first_name": "Sylvain",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "takerkart",
+      "is_team_leader": true,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
+  },
+  {
+    "model": "directory.researcher",
+    "pk": "yahia-cherif",
+    "fields": {
+      "orcid": "0000-0002-7107-7588",
+      "last_name": "Yahia-Cherif",
+      "first_name": "Lydia",
+      "middle_initials": "",
+      "email": "",
+      "title": "",
+      "team": "meg-eeg",
+      "is_team_leader": false,
+      "position": null,
+      "interests_en": "",
+      "interests_fr": "",
+      "telephone": "",
+      "photo": ""
+    }
   }
-},
-{
-  "model": "auth.permission",
-  "pk": 2,
-  "fields": {
-    "name": "Can change log entry",
-    "content_type": 1,
-    "codename": "change_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 3,
-  "fields": {
-    "name": "Can delete log entry",
-    "content_type": 1,
-    "codename": "delete_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 4,
-  "fields": {
-    "name": "Can add permission",
-    "content_type": 2,
-    "codename": "add_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 5,
-  "fields": {
-    "name": "Can change permission",
-    "content_type": 2,
-    "codename": "change_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 6,
-  "fields": {
-    "name": "Can delete permission",
-    "content_type": 2,
-    "codename": "delete_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 7,
-  "fields": {
-    "name": "Can add group",
-    "content_type": 3,
-    "codename": "add_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 8,
-  "fields": {
-    "name": "Can change group",
-    "content_type": 3,
-    "codename": "change_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 9,
-  "fields": {
-    "name": "Can delete group",
-    "content_type": 3,
-    "codename": "delete_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 10,
-  "fields": {
-    "name": "Can add user",
-    "content_type": 4,
-    "codename": "add_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 11,
-  "fields": {
-    "name": "Can change user",
-    "content_type": 4,
-    "codename": "change_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 12,
-  "fields": {
-    "name": "Can delete user",
-    "content_type": 4,
-    "codename": "delete_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 13,
-  "fields": {
-    "name": "Can add site",
-    "content_type": 5,
-    "codename": "add_site"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 14,
-  "fields": {
-    "name": "Can change site",
-    "content_type": 5,
-    "codename": "change_site"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 15,
-  "fields": {
-    "name": "Can delete site",
-    "content_type": 5,
-    "codename": "delete_site"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 16,
-  "fields": {
-    "name": "Can add content type",
-    "content_type": 6,
-    "codename": "add_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 17,
-  "fields": {
-    "name": "Can change content type",
-    "content_type": 6,
-    "codename": "change_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 18,
-  "fields": {
-    "name": "Can delete content type",
-    "content_type": 6,
-    "codename": "delete_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 19,
-  "fields": {
-    "name": "Can add session",
-    "content_type": 7,
-    "codename": "add_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 20,
-  "fields": {
-    "name": "Can change session",
-    "content_type": 7,
-    "codename": "change_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 21,
-  "fields": {
-    "name": "Can delete session",
-    "content_type": 7,
-    "codename": "delete_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 22,
-  "fields": {
-    "name": "Can add email address",
-    "content_type": 8,
-    "codename": "add_emailaddress"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 23,
-  "fields": {
-    "name": "Can change email address",
-    "content_type": 8,
-    "codename": "change_emailaddress"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 24,
-  "fields": {
-    "name": "Can delete email address",
-    "content_type": 8,
-    "codename": "delete_emailaddress"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 25,
-  "fields": {
-    "name": "Can add email confirmation",
-    "content_type": 9,
-    "codename": "add_emailconfirmation"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 26,
-  "fields": {
-    "name": "Can change email confirmation",
-    "content_type": 9,
-    "codename": "change_emailconfirmation"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 27,
-  "fields": {
-    "name": "Can delete email confirmation",
-    "content_type": 9,
-    "codename": "delete_emailconfirmation"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 28,
-  "fields": {
-    "name": "Can add social account",
-    "content_type": 10,
-    "codename": "add_socialaccount"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 29,
-  "fields": {
-    "name": "Can change social account",
-    "content_type": 10,
-    "codename": "change_socialaccount"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 30,
-  "fields": {
-    "name": "Can delete social account",
-    "content_type": 10,
-    "codename": "delete_socialaccount"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 31,
-  "fields": {
-    "name": "Can add social application",
-    "content_type": 11,
-    "codename": "add_socialapp"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 32,
-  "fields": {
-    "name": "Can change social application",
-    "content_type": 11,
-    "codename": "change_socialapp"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 33,
-  "fields": {
-    "name": "Can delete social application",
-    "content_type": 11,
-    "codename": "delete_socialapp"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 34,
-  "fields": {
-    "name": "Can add social application token",
-    "content_type": 12,
-    "codename": "add_socialtoken"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 35,
-  "fields": {
-    "name": "Can change social application token",
-    "content_type": 12,
-    "codename": "change_socialtoken"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 36,
-  "fields": {
-    "name": "Can delete social application token",
-    "content_type": 12,
-    "codename": "delete_socialtoken"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 37,
-  "fields": {
-    "name": "Can add laboratory",
-    "content_type": 13,
-    "codename": "add_laboratory"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 38,
-  "fields": {
-    "name": "Can change laboratory",
-    "content_type": 13,
-    "codename": "change_laboratory"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 39,
-  "fields": {
-    "name": "Can delete laboratory",
-    "content_type": 13,
-    "codename": "delete_laboratory"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 40,
-  "fields": {
-    "name": "Can add position type",
-    "content_type": 14,
-    "codename": "add_positiontype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 41,
-  "fields": {
-    "name": "Can change position type",
-    "content_type": 14,
-    "codename": "change_positiontype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 42,
-  "fields": {
-    "name": "Can delete position type",
-    "content_type": 14,
-    "codename": "delete_positiontype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 43,
-  "fields": {
-    "name": "Can add project",
-    "content_type": 15,
-    "codename": "add_project"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 44,
-  "fields": {
-    "name": "Can change project",
-    "content_type": 15,
-    "codename": "change_project"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 45,
-  "fields": {
-    "name": "Can delete project",
-    "content_type": 15,
-    "codename": "delete_project"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 46,
-  "fields": {
-    "name": "Can add researcher",
-    "content_type": 16,
-    "codename": "add_researcher"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 47,
-  "fields": {
-    "name": "Can change researcher",
-    "content_type": 16,
-    "codename": "change_researcher"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 48,
-  "fields": {
-    "name": "Can delete researcher",
-    "content_type": 16,
-    "codename": "delete_researcher"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 49,
-  "fields": {
-    "name": "Can add resource",
-    "content_type": 17,
-    "codename": "add_resource"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 50,
-  "fields": {
-    "name": "Can change resource",
-    "content_type": 17,
-    "codename": "change_resource"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 51,
-  "fields": {
-    "name": "Can delete resource",
-    "content_type": 17,
-    "codename": "delete_resource"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 52,
-  "fields": {
-    "name": "Can add resource type",
-    "content_type": 18,
-    "codename": "add_resourcetype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 53,
-  "fields": {
-    "name": "Can change resource type",
-    "content_type": 18,
-    "codename": "change_resourcetype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 54,
-  "fields": {
-    "name": "Can delete resource type",
-    "content_type": 18,
-    "codename": "delete_resourcetype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 55,
-  "fields": {
-    "name": "Can add team",
-    "content_type": 19,
-    "codename": "add_team"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 56,
-  "fields": {
-    "name": "Can change team",
-    "content_type": 19,
-    "codename": "change_team"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 57,
-  "fields": {
-    "name": "Can delete team",
-    "content_type": 19,
-    "codename": "delete_team"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 58,
-  "fields": {
-    "name": "Can add text",
-    "content_type": 20,
-    "codename": "add_text"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 59,
-  "fields": {
-    "name": "Can change text",
-    "content_type": 20,
-    "codename": "change_text"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 60,
-  "fields": {
-    "name": "Can delete text",
-    "content_type": 20,
-    "codename": "delete_text"
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$100000$CJ1Vqs0RO6Z4$YQH172eWp7o9o7IKN8C75u9eyal8tHpdT9lTm3AwG0Y=",
-    "last_login": "2018-07-26T15:49:04.135Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "andrew.davison@unic.cnrs-gif.fr",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2018-06-01T08:07:08.092Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 2,
-  "fields": {
-    "password": "!ZsCidTqOnupd9WLFIIPwgLSEEMz28nQd8B4o8mi9",
-    "last_login": "2018-06-01T09:01:38.831Z",
-    "is_superuser": false,
-    "username": "andrew",
-    "first_name": "Andrew",
-    "last_name": "Davison",
-    "email": "",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2018-06-01T08:09:08.064Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 1,
-  "fields": {
-    "action_time": "2018-06-01T08:08:26.705Z",
-    "user": 1,
-    "content_type": 11,
-    "object_id": "1",
-    "object_repr": "Orcid",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 2,
-  "fields": {
-    "action_time": "2018-06-01T08:08:47.567Z",
-    "user": 1,
-    "content_type": 5,
-    "object_id": "1",
-    "object_repr": "neuroinf.fr",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"domain\", \"name\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 3,
-  "fields": {
-    "action_time": "2018-06-01T08:08:58.144Z",
-    "user": 1,
-    "content_type": 11,
-    "object_id": "1",
-    "object_repr": "Orcid",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"sites\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 4,
-  "fields": {
-    "action_time": "2018-07-26T15:49:32.284Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "Tridesclous",
-    "object_repr": "Tridesclous",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"short_description_fr\", \"long_description_en\", \"members\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 5,
-  "fields": {
-    "action_time": "2018-07-26T15:52:03.138Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "OpenElectrophy",
-    "object_repr": "OpenElectrophy",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 6,
-  "fields": {
-    "action_time": "2018-07-26T15:55:35.203Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "mozaik",
-    "object_repr": "Mozaik",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 7,
-  "fields": {
-    "action_time": "2018-07-26T16:01:46.359Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "PyHRF",
-    "object_repr": "PyHRF",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 8,
-  "fields": {
-    "action_time": "2018-07-26T16:07:34.707Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "PRANAS",
-    "object_repr": "PRANAS",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 9,
-  "fields": {
-    "action_time": "2018-07-26T16:13:32.848Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "MotionClouds",
-    "object_repr": "MotionClouds",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 10,
-  "fields": {
-    "action_time": "2018-07-27T13:33:38.671Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "nilearn",
-    "object_repr": "Nilearn",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 11,
-  "fields": {
-    "action_time": "2018-07-27T13:35:48.484Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "nipy",
-    "object_repr": "NIPY",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 12,
-  "fields": {
-    "action_time": "2018-07-27T15:35:15.612Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "cessac",
-    "object_repr": " Bruno  Cessac",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 13,
-  "fields": {
-    "action_time": "2018-07-27T15:35:35.871Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "PRANAS",
-    "object_repr": "PRANAS",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"members\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 14,
-  "fields": {
-    "action_time": "2018-07-27T15:37:49.977Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "vieville",
-    "object_repr": " Thierry  Vi\u00e9ville",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 15,
-  "fields": {
-    "action_time": "2018-07-27T15:38:08.449Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "PRANAS",
-    "object_repr": "PRANAS",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"members\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 16,
-  "fields": {
-    "action_time": "2018-07-27T15:47:51.064Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "IRISA",
-    "object_repr": "IRISA, Rennes",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 17,
-  "fields": {
-    "action_time": "2018-07-27T15:47:54.629Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "VisAGeS",
-    "object_repr": "Vision, Action and information manaGement System in health, IRISA, Rennes",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 18,
-  "fields": {
-    "action_time": "2018-07-27T15:49:18.130Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "maumet",
-    "object_repr": " Camille  Maumet",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 19,
-  "fields": {
-    "action_time": "2018-07-27T15:51:37.358Z",
-    "user": 1,
-    "content_type": 15,
-    "object_id": "NIDM",
-    "object_repr": "Neuroimaging Data Model",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "IRISA",
-  "fields": {
-    "name": "Institut de Recherche en Informatique et Syst\u00e8mes Al\u00e9atoires",
-    "url": "https://www.irisa.fr/",
-    "city": "Rennes",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "cerco",
-  "fields": {
-    "name": "Centre de Recherche Cerveau & Cognition (UMR5549)",
-    "url": "http://cerco.ups-tlse.fr/",
-    "city": "Toulouse",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "crnl",
-  "fields": {
-    "name": "Centre de Recherche en Neurosciences de Lyon (Inserm U1028 - CNRS UMR5292), Universit\u00e9 Claude-Bernard",
-    "url": "http://www-crnl.univ-lyon1.fr/",
-    "city": "Lyon",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "gin",
-  "fields": {
-    "name": "Grenoble Institut des Neurosciences",
-    "url": "https://neurosciences.univ-grenoble-alpes.fr/",
-    "city": "Grenoble",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "ims",
-  "fields": {
-    "name": "Laboratoire de l'Int\u00e9gration du Mat\u00e9riau au Syst\u00e8me",
-    "url": "https://www.ims-bordeaux.fr/",
-    "city": "Bordeaux",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "inria-bordeaux",
-  "fields": {
-    "name": "Institut des Maladies Neurod\u00e9g\u00e9n\u00e9ratives",
-    "url": "http://www.inria.fr/en/teams/mnemosyne",
-    "city": "Bordeaux",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "inria-sophia",
-  "fields": {
-    "name": "INRIA / Universit\u00e9 C\u00f4te d\u2019Azur",
-    "url": "https://team.inria.fr/biovision/",
-    "city": "Sophia Antipolis",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "ins",
-  "fields": {
-    "name": "Institut de Neurosciences des Syst\u00e8mes (UMR1106), Inserm et Aix-Marseille Universit\u00e9",
-    "url": "http://ins.univ-amu.fr",
-    "city": "Marseille",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "institut-vision",
-  "fields": {
-    "name": "Institut de la Vision",
-    "url": "http://www.institut-vision.org/",
-    "city": "Paris",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "int",
-  "fields": {
-    "name": "Institut de Neurosciences de la Timone",
-    "url": "http://www.int.univ-amu.fr/",
-    "city": "Marseille",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "lpnc",
-  "fields": {
-    "name": "Laboratoire de Psychologie et NeuroCognition (UMR5105)",
-    "url": "http://lpnc.univ-grenoble-alpes.fr/",
-    "city": "Grenoble",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "map5",
-  "fields": {
-    "name": "Math\u00e9matiques Appliqu\u00e9es \u00e0 Paris 5 (MAP5-UMR 8145)",
-    "url": "http://map5.mi.parisdescartes.fr/",
-    "city": "Paris",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "neurospin",
-  "fields": {
-    "name": "NeuroSpin",
-    "url": "http://joliot.cea.fr/drf/joliot/Pages/Entites_de_recherche/NeuroSpin.aspx",
-    "city": "Saclay",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "sbri",
-  "fields": {
-    "name": "Stem-cell and Brain Research Institute",
-    "url": "http://www.sbri.fr/",
-    "city": "Lyon",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "unic",
-  "fields": {
-    "name": "UNIC, CNRS FRE 3693",
-    "url": "https://www.unic.cnrs-gif.fr/",
-    "city": "Gif-sur-Yvette",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.laboratory",
-  "pk": "unis",
-  "fields": {
-    "name": "Unit\u00e9 de Neurobiologie des canaux Ioniques et de la Synapse (INSERM - Aix-Marseille Universit\u00e9, UMR_S 1072)",
-    "url": "http://unis-neuro.com",
-    "city": "Marseille",
-    "country": "France"
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "VisAGeS",
-  "fields": {
-    "name_en": "Vision, Action and information manaGement System in health",
-    "name_fr": "Vision, Action and information manaGement System in health",
-    "description_en": "Unit/Project VisAGeS \u2013 U1228 (ex U746) is the only one research team jointly awarded by INSERM (National Institute of Health and Medical Research) and INRIA (National Institute of Research in Informatics and Automation). VisAGeS belongs to the IRISA institute (UMR CNRS 6074, University of Rennes I) located at Rennes, France on both medical and physical sciences campus.\r\n\r\nSince 70\u2019s, medical imaging is a very rapidly growing research domain, the last three decades have shown a rapid evolution of the dimension and quantity of data physicians have to work with. The next decade will follow this evolution by adding not only new spatio-temporal dimensions to the image data produced and used in a clinical environment but also new scales of analysis (nano or micro biological and molecular images to macros medical images). Another evolution will also consist in adding new effectors during image guided interventional procedures (surgery, interventional radiology\u2026). The classical way of making use of these images, mostly based on human interpretation, becomes less and less feasible. In addition, the societal pressure for a cost effective use of the equipments on the one hand, and a better traceability and quality insurance of the decision making process on the other hand, makes the development of advanced computer assisted medical imaging systems more and more essential.\r\n\r\nAccording to this context, our research team is devoted to the development of new processing algorithms in the context of medical image computing and computer assisted interventions: image fusion (registration and visualization), image segmentation and analysis, management of image related information\u2026). In this very large domain, our work are primarily focused on clinical applications and for the most part on head and brain related diseases.",
-    "description_fr": "",
-    "lab": "IRISA",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "as2n",
-  "fields": {
-    "name_en": "AS2N",
-    "name_fr": "AS2N",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "ims",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "barbier",
-  "fields": {
-    "name_en": "Neuroimagerie fonctionnelle et perfusion c\u00e9r\u00e9brale",
-    "name_fr": "Functional neuroimaging and brain perfusion",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "gin",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "benosman",
-  "fields": {
-    "name_en": "Vision and natural computation",
-    "name_fr": "Vision and natural computation",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "institut-vision",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "biovision",
-  "fields": {
-    "name_en": "Equipe Biovision",
-    "name_fr": "Biovision team",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "inria-sophia",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "brette",
-  "fields": {
-    "name_en": "Computational neuroscience of sensory systems",
-    "name_fr": "Neurosciences computationnelles des syst\u00e8mes sensoriels",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "institut-vision",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "cognisciences",
-  "fields": {
-    "name_en": "Cognisciences: int\u00e9gration et plasticit\u00e9 synaptique dans le cortex visuel",
-    "name_fr": "Cognisciences: synaptic integration and functional plasticity in primary visual cortex",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "unic",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "davison",
-  "fields": {
-    "name_en": "Neuroinformatics for data-driven modeling and neuromorphic computing",
-    "name_fr": "Neuroinformatics for data-driven modeling and neuromorphic computing",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "unic",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "destexhe",
-  "fields": {
-    "name_en": "Oscillatory and stochastic dynamics in thalamo-cortical networks",
-    "name_fr": "Dynamique oscillante et stochastique des r\u00e9seaux thalamocorticaux",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "unic",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "dominey",
-  "fields": {
-    "name_en": "Human and robot cognitive systems",
-    "name_fr": "Human and robot cognitive systems",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "sbri",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "goaillard",
-  "fields": {
-    "name_en": "Robustesse de l'excitabilit\u00e9",
-    "name_fr": "Robustness of excitability",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "unis",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "invibe",
-  "fields": {
-    "name_en": "Inf\u00e9rence et comportements visuels",
-    "name_fr": "Inference in visual behaviours",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "int",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "irmf",
-  "fields": {
-    "name_en": "Centre IRMf",
-    "name_fr": "fMRI Centre",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "int",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "jirsa",
-  "fields": {
-    "name_en": "Theoretical Neurosciences Group",
-    "name_fr": "Groupe \u2018Neurosciences Th\u00e9oriques\u2019",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "ins",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "maos",
-  "fields": {
-    "name_en": "M\u00e9moire et apprentissage des objets et des sc\u00e8nes",
-    "name_fr": "Memory and learning of objects and scenes",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "cerco",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "mnemosyne",
-  "fields": {
-    "name_en": "MNEMOSYNE",
-    "name_fr": "MNEMOSYNE",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "inria-bordeaux",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "parietal",
-  "fields": {
-    "name_en": "Parietal",
-    "name_fr": "Parietal",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "neurospin",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "picaud",
-  "fields": {
-    "name_en": "Retinal information processing - Pharmacology and Pathology",
-    "name_fr": "Transmission de l\u2019information visuelle, pharmacotoxicit\u00e9 r\u00e9tinienne et neuroprotection",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "institut-vision",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "psm",
-  "fields": {
-    "name_en": "Perception et sensori-motricit\u00e9",
-    "name_fr": "Perception and sensory motor research",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "lpnc",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "ravel-buonviso",
-  "fields": {
-    "name_en": "Coding and Memory in Olfaction",
-    "name_fr": "Codage et m\u00e9moire olfactive",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "crnl",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.team",
-  "pk": "stats-map5",
-  "fields": {
-    "name_en": "Statistique",
-    "name_fr": "Statistics",
-    "description_en": "",
-    "description_fr": "",
-    "lab": "map5",
-    "logo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "antolik",
-  "fields": {
-    "orcid": "",
-    "last_name": "Antolik",
-    "first_name": "Jan",
-    "middle_initials": "",
-    "email": "antolikjan@gmail.com",
-    "title": "",
-    "team": "benosman",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "anton",
-  "fields": {
-    "orcid": "",
-    "last_name": "Anton",
-    "first_name": "Jean-Luc",
-    "middle_initials": "",
-    "email": "Jean-Luc.Anton@univ-amu.fr",
-    "title": "",
-    "team": "irmf",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "baudot",
-  "fields": {
-    "orcid": "",
-    "last_name": "Baudot",
-    "first_name": "Pierre",
-    "middle_initials": "",
-    "email": "pierre.baudot@gmail.com",
-    "title": "",
-    "team": "goaillard",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "benosman",
-  "fields": {
-    "orcid": "",
-    "last_name": "Benosman",
-    "first_name": "Ryad",
-    "middle_initials": "",
-    "email": "ryad.benosman@upmc.fr",
-    "title": "",
-    "team": "benosman",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "brette",
-  "fields": {
-    "orcid": "",
-    "last_name": "Brette",
-    "first_name": "Romain",
-    "middle_initials": "",
-    "email": "romain.brette@inserm.fr",
-    "title": "",
-    "team": "brette",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "cessac",
-  "fields": {
-    "orcid": "",
-    "last_name": "Cessac",
-    "first_name": "Bruno",
-    "middle_initials": "",
-    "email": "",
-    "title": "",
-    "team": "biovision",
-    "is_team_leader": true,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "davison",
-  "fields": {
-    "orcid": "0000-0002-4793-7541",
-    "last_name": "Davison",
-    "first_name": "Andrew",
-    "middle_initials": "",
-    "email": "andrew.davison@unic.cnrs-gif.fr",
-    "title": "",
-    "team": "davison",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "These are my research interests...",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": "photos/Andrew_2.jpg"
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "destexhe",
-  "fields": {
-    "orcid": "",
-    "last_name": "Destexhe",
-    "first_name": "Alain",
-    "middle_initials": "",
-    "email": "destexhe@unic.cnrs-gif.fr",
-    "title": "",
-    "team": "destexhe",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "dojat",
-  "fields": {
-    "orcid": "",
-    "last_name": "Dojat",
-    "first_name": "Michel",
-    "middle_initials": "",
-    "email": "Michel.Dojat@ujf-grenoble.fr",
-    "title": "",
-    "team": "barbier",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "dominey",
-  "fields": {
-    "orcid": "",
-    "last_name": "Dominey",
-    "first_name": "Peter Ford",
-    "middle_initials": "",
-    "email": "peter.dominey@inserm.fr",
-    "title": "",
-    "team": "dominey",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "engemann",
-  "fields": {
-    "orcid": "",
-    "last_name": "Engemann",
-    "first_name": "Denis",
-    "middle_initials": "",
-    "email": "denis.engemann@gmail.com",
-    "title": "",
-    "team": "parietal",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "fregnac",
-  "fields": {
-    "orcid": "",
-    "last_name": "Fr\u00e9gnac",
-    "first_name": "Yves",
-    "middle_initials": "",
-    "email": "fregnac@unic.cnrs-gif.fr",
-    "title": "",
-    "team": "cognisciences",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "garcia",
-  "fields": {
-    "orcid": "",
-    "last_name": "Garcia",
-    "first_name": "Samuel",
-    "middle_initials": "",
-    "email": "samuel.garcia@cnrs.fr",
-    "title": "",
-    "team": "ravel-buonviso",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "gramfort",
-  "fields": {
-    "orcid": "",
-    "last_name": "Gramfort",
-    "first_name": "Alexandre",
-    "middle_initials": "",
-    "email": "alexandre.gramfort@inria.fr",
-    "title": "",
-    "team": "parietal",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "jirsa",
-  "fields": {
-    "orcid": "",
-    "last_name": "Jirsa",
-    "first_name": "Viktor",
-    "middle_initials": "",
-    "email": "viktor.jirsa@univ-amu.fr",
-    "title": "",
-    "team": "jirsa",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "kornprobst",
-  "fields": {
-    "orcid": "",
-    "last_name": "Kornprobst",
-    "first_name": "Pierre",
-    "middle_initials": "",
-    "email": "pierre.kornprobst@inria.fr",
-    "title": "",
-    "team": "biovision",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "marre",
-  "fields": {
-    "orcid": "",
-    "last_name": "Marre",
-    "first_name": "Olivier",
-    "middle_initials": "",
-    "email": "olivier.marre@gmail.com",
-    "title": "",
-    "team": "picaud",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "maumet",
-  "fields": {
-    "orcid": "0000-0002-6290-553X",
-    "last_name": "Maumet",
-    "first_name": "Camille",
-    "middle_initials": "",
-    "email": "",
-    "title": "",
-    "team": "VisAGeS",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "mermillod",
-  "fields": {
-    "orcid": "",
-    "last_name": "Mermillod",
-    "first_name": "Martial",
-    "middle_initials": "",
-    "email": "martial.mermillod@upmf-grenoble.fr",
-    "title": "",
-    "team": "psm",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "perrinet",
-  "fields": {
-    "orcid": "",
-    "last_name": "Perrinet",
-    "first_name": "Laurent",
-    "middle_initials": "",
-    "email": "laurent.perrinet@gmail.com",
-    "title": "",
-    "team": "invibe",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "pouzat",
-  "fields": {
-    "orcid": "",
-    "last_name": "Pouzat",
-    "first_name": "Christoph",
-    "middle_initials": "",
-    "email": "christophe.pouzat@ovh.fr",
-    "title": "",
-    "team": "stats-map5",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "rougier",
-  "fields": {
-    "orcid": "",
-    "last_name": "Rougier",
-    "first_name": "Nicolas",
-    "middle_initials": "",
-    "email": "Nicolas.Rougier@inria.fr",
-    "title": "",
-    "team": "mnemosyne",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "saighi",
-  "fields": {
-    "orcid": "",
-    "last_name": "Sa\u00efghi",
-    "first_name": "Sylvain",
-    "middle_initials": "",
-    "email": "sylvain.saighi@ims-bordeaux.fr",
-    "title": "",
-    "team": "as2n",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "stimberg",
-  "fields": {
-    "orcid": "",
-    "last_name": "Stimberg",
-    "first_name": "Marcel",
-    "middle_initials": "",
-    "email": "marcel.stimberg@inserm.fr",
-    "title": "",
-    "team": "brette",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "telenczuk",
-  "fields": {
-    "orcid": "",
-    "last_name": "Telenczuk",
-    "first_name": "Bartosz",
-    "middle_initials": "",
-    "email": "bartosz.telenczuk@unic.cnrs-gif.fr",
-    "title": "",
-    "team": "destexhe",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "thirion",
-  "fields": {
-    "orcid": "",
-    "last_name": "Thirion",
-    "first_name": "Bertrand",
-    "middle_initials": "",
-    "email": "bertrand.thirion@inria.fr",
-    "title": "",
-    "team": "parietal",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "thorpe",
-  "fields": {
-    "orcid": "",
-    "last_name": "Thorpe",
-    "first_name": "Simon",
-    "middle_initials": "",
-    "email": "simon.thorpe@cerco.ups-tlse.fr",
-    "title": "",
-    "team": "maos",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "varoquaux",
-  "fields": {
-    "orcid": "",
-    "last_name": "Varoquaux",
-    "first_name": "Ga\u00ebl",
-    "middle_initials": "",
-    "email": "gael.varoquaux@normalesup.org",
-    "title": "",
-    "team": "parietal",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "vieville",
-  "fields": {
-    "orcid": "",
-    "last_name": "Vi\u00e9ville",
-    "first_name": "Thierry",
-    "middle_initials": "",
-    "email": "",
-    "title": "",
-    "team": "mnemosyne",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "woodman",
-  "fields": {
-    "orcid": "",
-    "last_name": "Woodman",
-    "first_name": "Marmaduke",
-    "middle_initials": "",
-    "email": "marmaduke.woodman@univ-amu.fr",
-    "title": "",
-    "team": "jirsa",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.researcher",
-  "pk": "yger",
-  "fields": {
-    "orcid": "",
-    "last_name": "Yger",
-    "first_name": "Pierre",
-    "middle_initials": "",
-    "email": "pierre.yger@inserm.fr",
-    "title": "",
-    "team": "brette",
-    "is_team_leader": false,
-    "position": null,
-    "interests_en": "",
-    "interests_fr": "",
-    "telephone": "",
-    "photo": ""
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "Brian",
-  "fields": {
-    "name": "Brian",
-    "short_description_en": "Brian is a free, open source simulator for spiking neural networks",
-    "short_description_fr": "",
-    "long_description_en": "Brian is a free, open source simulator for spiking neural networks. It is written in the Python programming language and is available on almost all platforms. We believe that a simulator should not only save the time of processors, but also the time of scientists. Brian is therefore designed to be easy to learn and use, highly flexible and easily extensible.",
-    "long_description_fr": "",
-    "logo": "photos/brian_logo_1.png",
-    "licence": "CeCILL Free Software License Agreement v2.1",
-    "documentation": "http://brian2.readthedocs.io/en/stable/index.html",
-    "download": "https://pypi.python.org/pypi/Brian2",
-    "source_code": "https://github.com/brian-team/brian2",
-    "members": [
-      "brette",
-      "stimberg"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "Elephant",
-  "fields": {
-    "name": "Elephant",
-    "short_description_en": "Elephant is a package for the analysis of neurophysiology data, using Neo data structures.",
-    "short_description_fr": "",
-    "long_description_en": "Elephant (Electrophysiology Analysis Toolkit) is an open-source, community centered library for the analysis of electrophysiological data in the Python programming language. The focus of Elephant is on generic analysis functions for spike train data and time series recordings from electrodes, such as the local field potentials (LFP) or intracellular voltages. In addition to providing a common platform for analysis code from different laboratories, the Elephant project aims to provide a consistent and homogeneous analysis framework that is built on a modular foundation. Elephant is the direct successor to Neurotools and maintains ties to complementary projects such as OpenElectrophy and spykeviewer.",
-    "long_description_fr": "",
-    "logo": "photos/elephant_logo_sidebar.png",
-    "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "documentation": "http://elephant.readthedocs.org/",
-    "download": "https://pypi.python.org/packages/source/e/elephant/elephant-0.2.0.tar.gz#md5=c3cdefebe88e8b6f8379be254267b1db",
-    "source_code": "https://github.com/NeuralEnsemble/elephant",
-    "members": [
-      "davison"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "MNE",
-  "fields": {
-    "name": "MNE",
-    "short_description_en": "Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python",
-    "short_description_fr": "",
-    "long_description_en": "MNE-Python software is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological data such as MEG, EEG, sEEG, ECoG, and more. It includes modules for data input/output, preprocessing, visualization, source estimation, time-frequency analysis, connectivity analysis, machine learning, and statistics.",
-    "long_description_fr": "",
-    "logo": "photos/68747470733a2f2f6d617274696e6f732e6f72672f6d6e652f737461626c652f5f7374617469632f6_lqAXDs1.png",
-    "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "documentation": "http://martinos.org/mne/",
-    "download": "",
-    "source_code": "https://github.com/mne-tools/mne-python",
-    "members": [
-      "engemann",
-      "gramfort"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "MotionClouds",
-  "fields": {
-    "name": "MotionClouds",
-    "short_description_en": "Synthesizing moving textures tailored to study motion detection.",
-    "short_description_fr": "Synthesizing moving textures tailored to study motion detection.",
-    "long_description_en": "MotionClouds are random dynamic stimuli optimized to study motion perception.\n\nIn particular, these stimuli can be made closer to naturalistic textures compared to usual stimuli such as gratings and random-dot kinetograms. These have controlled information content: We simplified the definition to parametrically define these \"Motion Clouds\" around the most prevalent feature axis (mean and bandwith): direction, scale (spatial frequency), orientation. These scripts implement a framework to generate these random texture movies.",
-    "long_description_fr": "",
-    "logo": "photos/grating.gif",
-    "licence": "",
-    "documentation": "http://motionclouds.invibe.net",
-    "download": "",
-    "source_code": "https://github.com/NeuralEnsemble/MotionClouds",
-    "members": [
-      "perrinet"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "NIDM",
-  "fields": {
-    "name": "Neuroimaging Data Model",
-    "short_description_en": "A model to represent neuroimaging data with their metadata in support of data sharing and reuse!",
-    "short_description_fr": "A model to represent neuroimaging data with their metadata in support of data sharing and reuse!",
-    "long_description_en": "The Neuroimaging Data Model (NIDM) is a collection of specification documents that define extensions the the W3C PROV standard for the domain of human brain mapping. NIDM uses provenance information as means to link components from different stages of the scientific research process from dataset descriptors and computational workflow, to derived data and publication. \n\n<img alt=\"NIDM Component Layer Cake\" src=\"http://nidm.nidash.org/specs/img/nidm-layer-cake.png\" width=\"60%\">",
-    "long_description_fr": "",
-    "logo": "photos/nidm-layer-cake.png",
-    "licence": "Apache License 2.0",
-    "documentation": "http://nidm.nidash.org",
-    "download": "",
-    "source_code": "https://github.com/incf-nidash/nidm-specs",
-    "members": [
-      "maumet"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "Neo",
-  "fields": {
-    "name": "Neo",
-    "short_description_en": "Neo is a package for representing electrophysiology data in Python, together with support for reading a wide range of neurophysiology file formats.",
-    "short_description_fr": "",
-    "long_description_en": "Neo is a package for representing electrophysiology data in Python, together with support for reading a wide range of neurophysiology file formats, including Spike2, NeuroExplorer, AlphaOmega, Axon, Blackrock, Plexon, Tdt, and support for writing to a subset of these formats plus non-proprietary formats including HDF5.\nThe goal of Neo is to improve interoperability between Python tools for analyzing, visualizing and generating electrophysiology data (such as OpenElectrophy, NeuroTools, G-node, Helmholtz, PyNN) by providing a common, shared object model. In order to be as lightweight a dependency as possible, Neo is deliberately limited to represention of data, with no functions for data analysis or visualization.\n\nNeo implements a hierarchical data model well adapted to intracellular and extracellular electrophysiology and EEG data with support for multi-electrodes (for example tetrodes). Neo\u2019s data objects build on the quantities package, which in turn builds on NumPy by adding support for physical dimensions. Thus Neo objects behave just like normal NumPy arrays, but with additional metadata, checks for dimensional consistency and automatic unit conversion.",
-    "long_description_fr": "",
-    "logo": "photos/neologoshort_small_1.png",
-    "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "documentation": "http://neo.readthedocs.org/",
-    "download": "http://pypi.python.org/pypi/neo/",
-    "source_code": "https://github.com/NeuralEnsemble/python-neo",
-    "members": [
-      "davison",
-      "garcia"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "PRANAS",
-  "fields": {
-    "name": "PRANAS",
-    "short_description_en": "A new platform for retinal analysis and simulation.",
-    "short_description_fr": "A new platform for retinal analysis and simulation.",
-    "long_description_en": "The retina encodes visual scenes by trains of action potentials that are sent to the brain via the optic nerve. This software called PRANAS (Platform for Retinal ANalysis And Simulation) is a free access user-end software allowing to better understand this coding. PRANAS targets neuroscientists and modelers by providing a unique set of retina-related tools. PRANAS integrates a retina simulator allowing large scale simulations while keeping a strong biological plausibility and a toolbox for the analysis of spike train population statistics. The statistical method (entropy maximization under constraints) takes into account both spatial and temporal correlations as constraints, allowing to analyze the effects of memory on statistics. PRANAS also integrates a tool computing and representing in 3D (time-space) receptive fields. All these tools are accessible through a friendly graphical user interface. The most CPU-costly of them has been implemented to run in parallel.",
-    "long_description_fr": "",
-    "logo": "",
-    "licence": "",
-    "documentation": "http://journal.frontiersin.org/article/10.3389/fninf.2017.00049",
-    "download": "https://team.inria.fr/biovision/pranas-software-license/",
-    "source_code": "",
-    "members": [
-      "cessac",
-      "kornprobst",
-      "vieville"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "PyHRF",
-  "fields": {
-    "name": "PyHRF",
-    "short_description_en": "PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.",
-    "short_description_fr": "PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.",
-    "long_description_en": "PyHRF is a set of tools for within-subject fMRI data analysis, focused on the characterization of the hemodynamics.\n\nWithin the chain of fMRI data processing, these tools provide alternatives to the classical within-subject GLM fitting procedure. The inputs are preprocessed images (except spatial smoothing) and the outputs are the contrast maps and the HRF estimates.\n\nThe package is mainly written in Python and provides the implementation of the two following methods:\n\n- The joint-detection estimation (JDE) approach, which divides the brain into functionally homogeneous regions and provides one HRF estimate per region as well as response levels specific to each voxel and each experimental condition. This method embeds a temporal regularization on the estimated HRFs and an adaptive spatial regularization on the response levels.\n- The Regularized Finite Impulse Response (RFIR) approach, which provides HRF estimates for each voxel and experimental conditions. This method embeds a temporal regularization on the HRF shapes, but proceeds independently across voxels (no spatial model). See Introduction for a more detailed overview.",
-    "long_description_fr": "",
-    "logo": "photos/pyhrf_teaser.png",
-    "licence": "CeCILL Free Software License Agreement v2.1",
-    "documentation": "https://pyhrf.github.io",
-    "download": "",
-    "source_code": "https://github.com/pyhrf/pyhrf",
-    "members": [
-      "dojat"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "PyNN",
-  "fields": {
-    "name": "PyNN",
-    "short_description_en": "A Python package for simulator-independent specification of neuronal network models.",
-    "short_description_fr": "",
-    "long_description_en": "PyNN (pronounced 'pine') is a simulator-independent language for building neuronal network models.\n\nIn other words, you can write the code for a model once, using the PyNN API and the Python programming language, and then run it without modification on any simulator that PyNN supports (currently [NEURON](http://www.neuron.yale.edu/neuron/), NEST, and Brian), and on the SpiNNaker and BrainScaleS neuromorphic hardware systems.\n\nThe PyNN API aims to support modelling at a high-level of abstraction (populations of neurons, layers, columns and the connections between them) while still allowing access to the details of individual neurons and synapses when required. PyNN provides a library of standard neuron, synapse and synaptic plasticity models, which have been verified to work the same on the different supported simulators. PyNN also provides a set of commonly-used connectivity algorithms (e.g. all-to-all, random, distance-dependent, small-world) but makes it easy to provide your own connectivity in a simulator-independent way, either using the Connection Set Algebra ([Djurfeldt, 2010](http://software.incf.org/software/csa/)) or by writing your own Python code.\n\nEven if you don't wish to run simulations on multiple simulators, you may benefit from writing your simulation code using PyNN's powerful, high-level interface. In this case, you can use any neuron or synapse model supported by your simulator, and are not restricted to the standard models.\n\n### Citing PyNN\n\nIf you publish work using or mentioning PyNN, we would appreciate it if you would cite the following paper:\n\nDavison AP, Br\u00fcderle D, Eppler JM, Kremkow J, Muller E, Pecevski DA, Perrinet L and Yger P (2009) PyNN: a common interface for neuronal network simulators. *Frontiers in Neuroinformatics* 2:11 [doi:10.3389/neuro.11.011.2008](http://doi.org/10.3389/neuro.11.011.2008)",
-    "long_description_fr": "",
-    "logo": "photos/pynn_logo_sq.png",
-    "licence": "CeCILL Free Software License Agreement v2.0",
-    "documentation": "http://neuralensemble.org/docs/PyNN/",
-    "download": "https://pypi.org/project/PyNN/",
-    "source_code": "https://github.com/NeuralEnsemble/PyNN/",
-    "members": [
-      "davison",
-      "yger"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "ReScience",
-  "fields": {
-    "name": "ReScience",
-    "short_description_en": "",
-    "short_description_fr": "The ReScience journal. Reproducible Science is Good. Replicated Science is better.",
-    "long_description_en": "ReScience is a peer-reviewed journal that targets computational research and encourages the explicit replication of already published research promoting new and open-source implementations in order to ensure the original research is reproducible. To achieve such a goal, the whole editing chain is radically different from any other traditional scientific journal. ReScience lives on github where each new implementation is made available together with the comments, explanations and tests. Each submission takes the form of a pull request that is publicly reviewed and tested in order to guarantee any researcher can re-use it. If you ever replicated computational result from the literature, ReScience is the perfect place to publish this new implementation. Reproducible Science is Good. Replicated Science is better.",
-    "long_description_fr": "",
-    "logo": "photos/rescience-logo.png",
-    "licence": "Creative Commons Attribution 4.0 International",
-    "documentation": "https://rescience.github.io",
-    "download": "",
-    "source_code": "https://github.com/ReScience",
-    "members": [
-      "rougier"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "SpikeNet",
-  "fields": {
-    "name": "SpikeNet",
-    "short_description_en": "",
-    "short_description_fr": "",
-    "long_description_en": "",
-    "long_description_fr": "",
-    "logo": "",
-    "licence": "",
-    "documentation": "",
-    "download": "",
-    "source_code": "",
-    "members": [
-      "thorpe"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "SpykingCircus",
-  "fields": {
-    "name": "Spyking Circus",
-    "short_description_en": "Fast and scalable spike sorting in Python",
-    "short_description_fr": "",
-    "long_description_en": "The SpyKING CIRCUS is a massively parallel code to perform semi automatic spike sorting on large extra-cellular recordings. Using a smart clustering and a greedy template matching approach, the code can solve the problem of overlapping spikes, and has been tested both for in vitro and in vivo data, from tens of channels to up to 4225 channels. Results are very good, cross-validated on several datasets, and details of the algorithm can be found in the following publication: [https://elifesciences.org/articles/34518](https://elifesciences.org/articles/34518). Note that the datasets used in the paper are freely available on [Zenodo](https://zenodo.org/record/1205233/export/hx#.WrORP3XwaV4) if you want to try/benchmark your own spike sorting algorithms.",
-    "long_description_fr": "",
-    "logo": "photos/circus.png",
-    "licence": "CeCILL Free Software License Agreement v2.1",
-    "documentation": "https://spyking-circus.readthedocs.io/",
-    "download": "",
-    "source_code": "https://github.com/spyking-circus/spyking-circus",
-    "members": [
-      "marre",
-      "yger"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "TheVirtualBrain",
-  "fields": {
-    "name": "The Virtual Brain",
-    "short_description_en": "TheVirtualBrain is a framework for the simulation of the dynamics of large-scale brain networks with biologically realistic connectivity.",
-    "short_description_fr": "",
-    "long_description_en": "TheVirtualBrain is a framework for the simulation of the dynamics of large-scale brain networks with biologically realistic connectivity. TheVirtualBrain uses tractographic data (DTI/DSI) to generate connectivity matrices and build cortical and subcortical brain networks. The connectivity matrix defines the connection strengths and time delays via signal transmission between all network nodes. Various neural mass models are available in the repertoire of TheVirtualBrain and define the dynamics of a network node. Together, the neural mass models at the network nodes and the connectivity matrix define the Virtual Brain. TheVirtualBrain simulates and generates the time courses of various forms of neural activity including Local Field Potentials (LFP) and firing rate, as well as brain imaging data such as EEG, MEG and BOLD activations as observed in fMRI.\n\nTheVirtualBrain is foremost a scientific simulation platform and provides all means necessary to generate, manipulate and visualize connectivity and network dynamics. In addition, TheVirtualBrain comprises a set of classical time series analysis tools, structural and functional connectivity analysis tools, as well as parameter exploration facilities by launching parallel simulations on a cluster.",
-    "long_description_fr": "",
-    "logo": "photos/TVB_logo.svg",
-    "licence": "GNU General Public License v3.0 or later",
-    "documentation": "http://docs.thevirtualbrain.org/",
-    "download": "https://www.thevirtualbrain.org/tvb/zwei/brainsimulator-software",
-    "source_code": "https://github.com/the-virtual-brain/tvb-framework",
-    "members": [
-      "jirsa",
-      "woodman"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "Tridesclous",
-  "fields": {
-    "name": "Tridesclous",
-    "short_description_en": "Spike sorting with a French touch.",
-    "short_description_fr": "Spike sorting with a French touch.",
-    "long_description_en": "tris des clous is a very dishonest translation of spike sorting to French.\r\n\r\nPronouce it [tree day clue] in English.\r\n\r\nThe primary goal of tridesclous is to provide a toolkit to teach good practices in spike sorting techniques. This tools is now mature and can be used for experimental data.\r\n\r\nThe forest of spike sorting tools is dense and tridesclous is a new tree. Be curious and try it.",
-    "long_description_fr": "",
-    "logo": "photos/main_icon.png",
-    "licence": "MIT License",
-    "documentation": "http://tridesclous.readthedocs.io/",
-    "download": "",
-    "source_code": "https://github.com/tridesclous/tridesclous",
-    "members": [
-      "garcia",
-      "pouzat"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "mozaik",
-  "fields": {
-    "name": "Mozaik",
-    "short_description_en": "An integrated workflow framework for large scale neural simulations.",
-    "short_description_fr": "An integrated workflow framework for large scale neural simulations.",
-    "long_description_en": "Mozaik is intended to improve the efficiency of computational neuroscience projects by relieving users from writing boilerplate code for projects involving complex heterogenous neural network models, complex stimulation and experimental protocols and subsequent analysis and plotting.\n\nIt is built on top of the following tools:\n\n- PyNN (for simulator independent neural network model definition)\n- Neo (for exchange and internal representation of data)\n- matplotib (for plotting)\n\nMozaik currently covers the following main areas of the neural simulation workflow:\n\n- High-level components for definition of topologically organized spiking networks (built on top of PyNN)\n- Experiment control (description and execution of experiments)\n- Stimulus definition framework\n- Data storage (storage of recordings and analysis results)\n- Data manipulation (a query based system for performing high-level filtering operations over the datastore)\n- Analysis module\n- Plotting module",
-    "long_description_fr": "",
-    "logo": "photos/mozaik_logo_small.png",
-    "licence": "CeCILL Free Software License Agreement v2.0",
-    "documentation": "http://neuralensemble.org/docs/mozaik/",
-    "download": "http://pypi.python.org/pypi/mozaik",
-    "source_code": "https://github.com/antolikjan/mozaik.git",
-    "members": [
-      "antolik",
-      "davison"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "nilearn",
-  "fields": {
-    "name": "Nilearn",
-    "short_description_en": "Machine learning for NeuroImaging in Python.",
-    "short_description_fr": "Machine learning for NeuroImaging in Python.",
-    "long_description_en": "Nilearn is a Python module for fast and easy statistical learning on NeuroImaging data.\n\nIt leverages the [scikit-learn](http://scikit-learn.org/) Python toolbox for multivariate statistics with applications such as predictive modelling, classification, decoding, or connectivity analysis.",
-    "long_description_fr": "",
-    "logo": "photos/nilearn-logo.png",
-    "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "documentation": "http://nilearn.github.io",
-    "download": "",
-    "source_code": "https://github.com/nilearn/nilearn",
-    "members": [
-      "thirion",
-      "varoquaux"
-    ]
-  }
-},
-{
-  "model": "directory.project",
-  "pk": "nipy",
-  "fields": {
-    "name": "NIPY",
-    "short_description_en": "NIPY is a Python project for analysis of structural and functional neuroimaging data.",
-    "short_description_fr": "NIPY is a Python project for analysis of structural and functional neuroimaging data.",
-    "long_description_en": "Neuroimaging tools for Python.\n\nThe aim of NIPY is to produce a platform-independent Python environment for the analysis of functional brain imaging data using an open development model.\n\nIn NIPY we aim to:\n\n- Provide an open source, mixed language scientific programming environment suitable for rapid development.\n- Create software components in this environment to make it easy to develop tools for MRI, EEG, PET and other modalities.\n- Create and maintain a wide base of developers to contribute to this platform.\n- To maintain and develop this framework as a single, easily installable bundle.",
-    "long_description_fr": "",
-    "logo": "photos/reggie2.png",
-    "licence": "BSD 3-Clause \"New\" or \"Revised\" License",
-    "documentation": "http://nipy.org/nipy",
-    "download": "",
-    "source_code": "https://github.com/nipy/nipy",
-    "members": [
-      "thirion",
-      "varoquaux"
-    ]
-  }
-},
-{
-  "model": "sites.site",
-  "pk": 1,
-  "fields": {
-    "domain": "neuroinf.fr",
-    "name": "neuroinf.fr"
-  }
-},
-{
-  "model": "socialaccount.socialapp",
-  "pk": 1,
-  "fields": {
-    "provider": "orcid",
-    "name": "Orcid",
-    "client_id": "APP-WU9RIM0TOAUELF8R",
-    "secret": "a23a252d-7b97-4e2b-81f6-80c3e44986f7",
-    "key": "",
-    "sites": [
-      1
-    ]
-  }
-},
-{
-  "model": "socialaccount.socialaccount",
-  "pk": 1,
-  "fields": {
-    "user": 2,
-    "provider": "orcid",
-    "uid": "0000-0002-4793-7541",
-    "last_login": "2018-06-01T09:01:38.817Z",
-    "date_joined": "2018-06-01T08:09:08.072Z",
-    "extra_data": "{\"orcid-identifier\": {\"uri\": \"https://orcid.org/0000-0002-4793-7541\", \"path\": \"0000-0002-4793-7541\", \"host\": \"orcid.org\"}, \"preferences\": {\"locale\": \"EN\"}, \"history\": {\"creation-method\": \"WEBSITE\", \"completion-date\": {\"value\": 1350775840449}, \"submission-date\": {\"value\": 1350766826604}, \"last-modified-date\": {\"value\": 1527843698161}, \"claimed\": true, \"source\": null, \"deactivation-date\": null, \"verified-email\": true, \"verified-primary-email\": true}, \"person\": {\"last-modified-date\": {\"value\": 1517873256636}, \"name\": {\"created-date\": {\"value\": 1460759641206}, \"last-modified-date\": {\"value\": 1460759641206}, \"given-names\": {\"value\": \"Andrew\"}, \"family-name\": {\"value\": \"Davison\"}, \"credit-name\": {\"value\": \"Andrew P. Davison\"}, \"source\": null, \"visibility\": \"PUBLIC\", \"path\": \"0000-0002-4793-7541\"}, \"other-names\": {\"last-modified-date\": null, \"other-name\": [], \"path\": \"/0000-0002-4793-7541/other-names\"}, \"biography\": null, \"researcher-urls\": {\"last-modified-date\": null, \"researcher-url\": [], \"path\": \"/0000-0002-4793-7541/researcher-urls\"}, \"emails\": {\"last-modified-date\": null, \"email\": [], \"path\": \"/0000-0002-4793-7541/email\"}, \"addresses\": {\"last-modified-date\": null, \"address\": [], \"path\": \"/0000-0002-4793-7541/address\"}, \"keywords\": {\"last-modified-date\": {\"value\": 1372104829385}, \"keyword\": [{\"created-date\": {\"value\": 1372104829385}, \"last-modified-date\": {\"value\": 1372104829385}, \"source\": {\"source-orcid\": {\"uri\": \"https://orcid.org/0000-0002-4793-7541\", \"path\": \"0000-0002-4793-7541\", \"host\": \"orcid.org\"}, \"source-client-id\": null, \"source-name\": {\"value\": \"Andrew P. Davison\"}}, \"content\": \"neuroinformatics, computational neuroscience\", \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/keywords/1708\", \"put-code\": 1708, \"display-index\": 0}], \"path\": \"/0000-0002-4793-7541/keywords\"}, \"external-identifiers\": {\"last-modified-date\": {\"value\": 1517873256636}, \"external-identifier\": [{\"created-date\": {\"value\": 1372104829385}, \"last-modified-date\": {\"value\": 1517873256636}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"external-id-type\": \"Scopus Author ID\", \"external-id-value\": \"8940202300\", \"external-id-url\": {\"value\": \"http://www.scopus.com/inward/authorDetails.url?authorID=8940202300&partnerID=MN8TOARS\"}, \"external-id-relationship\": \"SELF\", \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/external-identifiers/155328\", \"put-code\": 155328, \"display-index\": 0}], \"path\": \"/0000-0002-4793-7541/external-identifiers\"}, \"path\": \"/0000-0002-4793-7541/person\"}, \"activities-summary\": {\"last-modified-date\": {\"value\": 1453736257740}, \"educations\": {\"last-modified-date\": null, \"education-summary\": [], \"path\": \"/0000-0002-4793-7541/educations\"}, \"employments\": {\"last-modified-date\": null, \"employment-summary\": [], \"path\": \"/0000-0002-4793-7541/employments\"}, \"fundings\": {\"last-modified-date\": null, \"group\": [], \"path\": \"/0000-0002-4793-7541/fundings\"}, \"peer-reviews\": {\"last-modified-date\": null, \"group\": [], \"path\": \"/0000-0002-4793-7541/peer-reviews\"}, \"works\": {\"last-modified-date\": {\"value\": 1453736257740}, \"group\": [{\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1109/MCSE.2012.41\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251304, \"created-date\": {\"value\": 1372104473936}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Automated capture of experiment context for easier reproducibility in computational research\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1109/MCSE.2012.41\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2012\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251304\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.718482\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251305, \"created-date\": {\"value\": 1372104473943}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Collaborative modelling: The future of computational neuroscience?\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.718482\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2012\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251305\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.722743\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251306, \"created-date\": {\"value\": 1372104473950}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Creating, documenting and sharing network models\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3109/0954898X.2012.722743\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2012\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251306\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s00422-011-0435-9\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251307, \"created-date\": {\"value\": 1372104473976}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"A comprehensive workflow for general-purpose neural modeling with highly configurable neuromorphic hardware systems\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s00422-011-0435-9\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2011\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251307\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1371/journal.pcbi.1000815\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251308, \"created-date\": {\"value\": 1372104474031}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"NeuroML: A language for describing data driven models of neurons and networks with a high degree of biological detail\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1371/journal.pcbi.1000815\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2010\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251308\", \"display-index\": \"0\"}, {\"put-code\": 9251309, \"created-date\": {\"value\": 1372104474053}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"NeuroML: a language for describing data driven models of neurons and networks with a high degree of biological detail.\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1371/journal.pcbi.1000815\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2010\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251309\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.017.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251328, \"created-date\": {\"value\": 1372104829243}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"Establishing a Novel Modeling Tool: A Python-based Interface for a Neuromorphic Hardware System\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.017.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-5196\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251328\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.001.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251327, \"created-date\": {\"value\": 1372104801740}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"NEURON and Python\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.001.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-5196\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251327\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.0753-09.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251310, \"created-date\": {\"value\": 1372104474076}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Reliable recall of spontaneous activity patterns in cortical networks\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.0753-09.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251310\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.01.036.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251324, \"created-date\": {\"value\": 1372104749559}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"Trends in programming languages for neuroscience simulations\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.01.036.2009\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-4548\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2009\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251324\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.011.2008\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251325, \"created-date\": {\"value\": 1372104762382}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-3054-1567\", \"path\": \"0000-0002-3054-1567\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"CrossRef Metadata Search\"}}, \"title\": {\"title\": {\"value\": \"PyNN: a common interface for neuronal network simulators\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.3389/neuro.11.011.2008\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}, {\"external-id-type\": \"issn\", \"external-id-value\": \"1662-5196\", \"external-id-url\": null, \"external-id-relationship\": \"PART_OF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2008\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251325\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s10827-007-0038-6\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251311, \"created-date\": {\"value\": 1372104474087}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Simulation of networks of spiking neurons: A review of tools and strategies\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1007/s10827-007-0038-6\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2007\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251311\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1142/S0129065706000524\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251312, \"created-date\": {\"value\": 1372104474123}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Biophysical and phenomenological models of multiple spike interactions in spike-timing dependent plasticity\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1142/S0129065706000524\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2006\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251312\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.5263-05.2006\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251313, \"created-date\": {\"value\": 1372104474138}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Learning cross-modal spatial transformations through spike timing-dependent plasticity\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1523/JNEUROSCI.5263-05.2006\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2006\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251313\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1385/NI:2:3:327\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251314, \"created-date\": {\"value\": 1372104474145}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Semi-automated population of an online database of neuronal models (ModelDB) with citation information, using PubMed for validation\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1385/NI:2:3:327\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2004\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251314\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1152/jn.00623.2002\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251315, \"created-date\": {\"value\": 1372104474158}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Dendrodendritic inhibition and simulated odor responses in a detailed olfactory bulb network model\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1152/jn.00623.2002\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2003\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251315\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": []}, \"work-summary\": [{\"put-code\": 9251316, \"created-date\": {\"value\": 1372104474167}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"ModelDB: making models publicly accessible to support computational neuroscience.\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": null, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2003\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251316\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0925-2312(01)00391-5\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251317, \"created-date\": {\"value\": 1372104474181}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"Spike synchronization in a biophysically-detailed model of the olfactory bulb\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0925-2312(01)00391-5\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2001\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251317\", \"display-index\": \"0\"}]}, {\"last-modified-date\": {\"value\": 1453736257740}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0361-9230(99)00256-7\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"work-summary\": [{\"put-code\": 9251318, \"created-date\": {\"value\": 1372104474190}, \"last-modified-date\": {\"value\": 1453736257740}, \"source\": {\"source-orcid\": null, \"source-client-id\": {\"uri\": \"https://orcid.org/client/0000-0002-5982-8983\", \"path\": \"0000-0002-5982-8983\", \"host\": \"orcid.org\"}, \"source-name\": {\"value\": \"Scopus - Elsevier\"}}, \"title\": {\"title\": {\"value\": \"A reduced compartmental model of the mitral cell for use in network models of the olfactory bulb\"}, \"subtitle\": null, \"translated-title\": null}, \"external-ids\": {\"external-id\": [{\"external-id-type\": \"doi\", \"external-id-value\": \"10.1016/S0361-9230(99)00256-7\", \"external-id-url\": null, \"external-id-relationship\": \"SELF\"}]}, \"type\": \"JOURNAL_ARTICLE\", \"publication-date\": {\"year\": {\"value\": \"2000\"}, \"month\": null, \"day\": null, \"media-type\": null}, \"visibility\": \"PUBLIC\", \"path\": \"/0000-0002-4793-7541/work/9251318\", \"display-index\": \"0\"}]}], \"path\": \"/0000-0002-4793-7541/works\"}, \"path\": \"/0000-0002-4793-7541/activities\"}, \"path\": \"/0000-0002-4793-7541\"}"
-  }
-},
-{
-  "model": "socialaccount.socialtoken",
-  "pk": 1,
-  "fields": {
-    "app": 1,
-    "account": 1,
-    "token": "6a71efe9-8a3e-4b16-a841-23a80e858796",
-    "token_secret": "f5cf17e9-7751-4853-b05c-d0035c827d1b",
-    "expires_at": "2038-06-01T05:16:56.249Z"
-  }
-}
 ]

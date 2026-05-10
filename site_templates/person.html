@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title_suffix %} — {{ person.display_name }}{% endblock %}
+{% block content %}
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">{{ person.display_name }}</span>
+
+      {% if person.orcid %}
+      <div class="md-subhead" itemscope itemtype="https://schema.org/Person">
+        <a itemprop="sameAs" content="https://orcid.org/{{ person.orcid }}"
+           href="https://orcid.org/{{ person.orcid }}"
+           target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;">
+          <img src="/media/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/{{ person.orcid }}
+        </a>
+      </div>
+      {% endif %}
+
+      {% if person.position %}<span class="md-subhead">{{ person.position }}</span>{% endif %}
+
+      {% if person.team %}
+      <span class="md-subhead">{{ person.team.name_en }}</span>
+      {% if person.team.lab %}<span class="md-subhead">{{ person.team.lab.name }}, {{ person.team.lab.city }}</span>{% endif %}
+      {% endif %}
+    </div>
+
+    {% if person.photo_url %}
+    <div class="md-card-title-media">
+      <img src="{{ person.photo_url }}" alt="{{ person.display_name }}" class="person-photo">
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="md-card-content">
+    {% if person.interests_en_html %}
+    {{ person.interests_en_html | safe }}
+    {% endif %}
+
+    {% if person.projects %}
+    <h3>Projects</h3>
+    <div class="project-grid">
+      {% for project in person.projects %}
+      <a href="/projects/{{ project.id }}/" class="project-tile">
+        {% if project.logo_url %}
+        <img src="{{ project.logo_url }}" alt="{{ project.name }}">
+        {% endif %}
+        <span>{{ project.name }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}

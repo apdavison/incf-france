@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — About</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<h1>About INCF France</h1>
+
+<p>
+Neuroinformatics combines neuroscience and informatics research to
+develop and apply advanced tools and approaches essential for a
+major advancement in understanding the structure and function of
+the brain.</p>
+
+<p>The <a href="http://www.incf.org">International Neuroinformatics Coordinating Facility</a> (INCF) is
+a professional organization devoted to advancing the field of neuroinformatics.
+One of its aims is to develop an international neuroinformatics infrastructure,
+which promotes the sharing of data and computing resources to the international research
+community.
+A larger objective of the INCF is to help develop scalable, portable, and extensible applications
+that can be used by neuroscience laboratories worldwide.</p>
+
+<p>The principal objective of the French National Node of the INCF is to
+facilitate interactions between neuroinformatics researchers within France,
+and to act as a link between global INCF activities and local scientists,
+in collaboration with other actors working in neuroinformatics, such as the
+<a href="https://its.aviesan.fr/index.php?pagendx=291">France Life Imaging</a> infrastructure,
+the <a href="http://www.neurosciences.asso.fr/">Société des Neurosciences</a>,
+the <a href="http://www.gdr-isis.fr/neurostic/">NeuroSTIC</a> community, etc.</p>
+
+<p>The French National Node operates under the authority of the
+<a href="http://www.aviesan.fr/">French National Alliance for Life and Health Sciences</a> (ITMO Neurosciences),
+and is based at <a href="http://neuro-psi.fr">NeuroPSI</a> (CNRS-Université Paris-Saclay).
+</p>
+
+<h2>Organising committee</h2>
+<ul>
+    <li><a href="/people/davison/">Andrew Davison</a> (NeuroPSI, CNRS-Université Paris-Saclay)</li>
+    <li><a href="/people/dojat/">Michel Dojat</a> (GIN, Inserm)</li>
+    <li><a href="/people/durrleman/">Stanley Durrleman</a> (ICM)</li>
+    <li><a href="/people/maumet/">Camille Maumet</a> (Inria, Univ Rennes, CNRS, Inserm)</li>
+    <li><a href="/people/takerkart/">Sylvain Takerkart</a> (INT, CNRS-Aix-Marseille Université)</li>
+    <li><a href="/people/yahia-cherif/">Lydia Yahia-Cherif</a> (ICM)</li>
+    <li><a href="/people/chavane/">Frédéric Chavane</a> (INT, CNRS-Aix-Marseille Université)</li>
+    <li><a href="/people/jirsa/">Viktor Jirsa</a> (INS, Inserm et Aix-Marseille Université)</li>
+</ul>
+
+
+  </div>
+</body>
+</html>

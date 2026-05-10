@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — Bruno Cessac</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">Bruno Cessac</span>
+
+      
+
+      
+
+      
+      <span class="md-subhead">Equipe Biovision</span>
+      <span class="md-subhead">INRIA / Université Côte d’Azur, Sophia Antipolis</span>
+      
+    </div>
+
+    
+  </div>
+
+  <div class="md-card-content">
+    
+
+    
+    <h3>Projects</h3>
+    <div class="project-grid">
+      
+      <a href="/projects/PRANAS/" class="project-tile">
+        
+        <span>PRANAS</span>
+      </a>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

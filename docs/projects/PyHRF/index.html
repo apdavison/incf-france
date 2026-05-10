@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — PyHRF</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">PyHRF</span>
+      <span class="md-subhead">PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.</span>
+      <span class="md-subhead">CeCILL Free Software License Agreement v2.1</span>
+      <div class="project-links">
+        
+        <a href="https://pyhrf.github.io">Documentation</a>
+        
+        
+        
+        <a href="https://github.com/pyhrf/pyhrf">Source code</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="md-card-title-media">
+      <img src="/media/photos/pyhrf_teaser.png" alt="PyHRF" class="project-logo">
+    </div>
+    
+  </div>
+
+  <div class="md-card-content">
+    
+    <div class="project-description">
+      <p>PyHRF is a set of tools for within-subject fMRI data analysis, focused on the characterization of the hemodynamics.</p>
+<p>Within the chain of fMRI data processing, these tools provide alternatives to the classical within-subject GLM fitting procedure. The inputs are preprocessed images (except spatial smoothing) and the outputs are the contrast maps and the HRF estimates.</p>
+<p>The package is mainly written in Python and provides the implementation of the two following methods:</p>
+<ul>
+<li>The joint-detection estimation (JDE) approach, which divides the brain into functionally homogeneous regions and provides one HRF estimate per region as well as response levels specific to each voxel and each experimental condition. This method embeds a temporal regularization on the estimated HRFs and an adaptive spatial regularization on the response levels.</li>
+<li>The Regularized Finite Impulse Response (RFIR) approach, which provides HRF estimates for each voxel and experimental conditions. This method embeds a temporal regularization on the HRF shapes, but proceeds independently across voxels (no spatial model). See Introduction for a more detailed overview.</li>
+</ul>
+    </div>
+    
+
+    
+    <h3>Contributors</h3>
+    <div class="people-grid">
+      
+      <a href="/people/dojat/" class="person-tile">Michel Dojat</a>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

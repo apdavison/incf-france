@@ -6,3 +6,5 @@ INCF National Node logos
 incf.db
 node_modules
 postgres_data
+.venv
+.git

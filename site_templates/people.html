@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title_suffix %} — People{% endblock %}
+{% block content %}
+
+<h1>People</h1>
+<p>Neuroinformatics researchers working in France.</p>
+
+<div class="people-grid">
+  {% for person in people %}
+  <a href="/people/{{ person.id }}/" class="person-tile">{{ person.display_name }}</a>
+  {% endfor %}
+</div>
+
+{% endblock %}

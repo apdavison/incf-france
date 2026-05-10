@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INCF France — PRANAS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+  <div class="site-toolbar">
+    <a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" class="site-logo"></a>
+  </div>
+  <nav class="site-nav">
+    <a href="/about/">About</a>
+    <a href="/people/">People</a>
+    <a href="/projects/">Projects</a>
+    <a href="/workshops/geant2019/">Workshops</a>
+  </nav>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (href !== '/' && path.startsWith(href)) {
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  <div class="content-container">
+    
+
+<div class="md-card">
+  <div class="md-card-title">
+    <div class="md-card-title-text">
+      <span class="md-headline">PRANAS</span>
+      <span class="md-subhead">A new platform for retinal analysis and simulation.</span>
+      
+      <div class="project-links">
+        
+        <a href="http://journal.frontiersin.org/article/10.3389/fninf.2017.00049">Documentation</a>
+        
+        
+        <a href="https://team.inria.fr/biovision/pranas-software-license/">Download</a>
+        
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+  <div class="md-card-content">
+    
+    <div class="project-description">
+      <p>The retina encodes visual scenes by trains of action potentials that are sent to the brain via the optic nerve. This software called PRANAS (Platform for Retinal ANalysis And Simulation) is a free access user-end software allowing to better understand this coding. PRANAS targets neuroscientists and modelers by providing a unique set of retina-related tools. PRANAS integrates a retina simulator allowing large scale simulations while keeping a strong biological plausibility and a toolbox for the analysis of spike train population statistics. The statistical method (entropy maximization under constraints) takes into account both spatial and temporal correlations as constraints, allowing to analyze the effects of memory on statistics. PRANAS also integrates a tool computing and representing in 3D (time-space) receptive fields. All these tools are accessible through a friendly graphical user interface. The most CPU-costly of them has been implemented to run in parallel.</p>
+    </div>
+    
+
+    
+    <h3>Contributors</h3>
+    <div class="people-grid">
+      
+      <a href="/people/cessac/" class="person-tile">Bruno Cessac</a>
+      
+      <a href="/people/kornprobst/" class="person-tile">Pierre Kornprobst</a>
+      
+      <a href="/people/vieville/" class="person-tile">Thierry Viéville</a>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>
