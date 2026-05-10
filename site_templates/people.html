@@ -1,9 +1,12 @@
 {% extends "base.html" %}
-{% block title_suffix %} — People{% endblock %}
+{% block title_suffix %} — <span class="lang-en">People</span><span class="lang-fr">Personnes</span>{% endblock %}
 {% block content %}
 
-<h1>People</h1>
-<p>Neuroinformatics researchers working, or who previously worked, in France.</p>
+<h1><span class="lang-en">People</span><span class="lang-fr">Personnes</span></h1>
+<p>
+  <span class="lang-en">Neuroinformatics researchers working, or who previously worked, in France.</span>
+  <span class="lang-fr">Chercheurs en neuroinformatique travaillant, ou ayant travaillé, en France.</span>
+</p>
 
 <div class="people-grid">
   {% for person in people %}

@@ -6,16 +6,29 @@
   <title>INCF France — Spyking Circus</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -26,6 +39,13 @@
           a.classList.add('active');
         }
       });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
+      });
     })();
   </script>
   <div class="content-container">
@@ -35,15 +55,16 @@
   <div class="md-card-title">
     <div class="md-card-title-text">
       <span class="md-headline">Spyking Circus</span>
-      <span class="md-subhead">Fast and scalable spike sorting in Python</span>
+      <span class="md-subhead lang-en">Fast and scalable spike sorting in Python</span>
+      <span class="md-subhead lang-fr">Fast and scalable spike sorting in Python</span>
       <span class="md-subhead">CeCILL Free Software License Agreement v2.1</span>
       <div class="project-links">
         
-        <a href="https://spyking-circus.readthedocs.io/">Documentation</a>
+        <a href="https://spyking-circus.readthedocs.io/"><span class="lang-en">Documentation</span><span class="lang-fr">Documentation</span></a>
         
         
         
-        <a href="https://github.com/spyking-circus/spyking-circus">Source code</a>
+        <a href="https://github.com/spyking-circus/spyking-circus"><span class="lang-en">Source code</span><span class="lang-fr">Code source</span></a>
         
       </div>
     </div>
@@ -57,13 +78,18 @@
 
   <div class="md-card-content">
     
-    <div class="project-description">
+    <div class="project-description lang-en">
+      <p>The SpyKING CIRCUS is a massively parallel code to perform semi automatic spike sorting on large extra-cellular recordings. Using a smart clustering and a greedy template matching approach, the code can solve the problem of overlapping spikes, and has been tested both for in vitro and in vivo data, from tens of channels to up to 4225 channels. Results are very good, cross-validated on several datasets, and details of the algorithm can be found in the following publication: <a href="https://elifesciences.org/articles/34518">https://elifesciences.org/articles/34518</a>. Note that the datasets used in the paper are freely available on <a href="https://zenodo.org/record/1205233/export/hx#.WrORP3XwaV4">Zenodo</a> if you want to try/benchmark your own spike sorting algorithms.</p>
+    </div>
+    
+    
+    <div class="project-description lang-fr">
       <p>The SpyKING CIRCUS is a massively parallel code to perform semi automatic spike sorting on large extra-cellular recordings. Using a smart clustering and a greedy template matching approach, the code can solve the problem of overlapping spikes, and has been tested both for in vitro and in vivo data, from tens of channels to up to 4225 channels. Results are very good, cross-validated on several datasets, and details of the algorithm can be found in the following publication: <a href="https://elifesciences.org/articles/34518">https://elifesciences.org/articles/34518</a>. Note that the datasets used in the paper are freely available on <a href="https://zenodo.org/record/1205233/export/hx#.WrORP3XwaV4">Zenodo</a> if you want to try/benchmark your own spike sorting algorithms.</p>
     </div>
     
 
     
-    <h3>Contributors</h3>
+    <h3><span class="lang-en">Contributors</span><span class="lang-fr">Contributeurs</span></h3>
     <div class="people-grid">
       
       <a href="/people/marre/" class="person-tile">Olivier Marre</a>

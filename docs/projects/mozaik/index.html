@@ -6,16 +6,29 @@
   <title>INCF France — Mozaik</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -26,6 +39,13 @@
           a.classList.add('active');
         }
       });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
+      });
     })();
   </script>
   <div class="content-container">
@@ -35,17 +55,19 @@
   <div class="md-card-title">
     <div class="md-card-title-text">
       <span class="md-headline">Mozaik</span>
-      <span class="md-subhead">An integrated workflow framework for large scale neural simulations.</span>
+      <span class="md-subhead lang-en">An integrated workflow framework for large scale neural simulations.</span>
+      <span class="md-subhead lang-fr">An integrated workflow framework for large scale neural simulations.</span>
+      
       <span class="md-subhead">CeCILL Free Software License Agreement v2.0</span>
       <div class="project-links">
         
-        <a href="http://neuralensemble.org/docs/mozaik/">Documentation</a>
+        <a href="http://neuralensemble.org/docs/mozaik/"><span class="lang-en">Documentation</span><span class="lang-fr">Documentation</span></a>
         
         
-        <a href="http://pypi.python.org/pypi/mozaik">Download</a>
+        <a href="http://pypi.python.org/pypi/mozaik"><span class="lang-en">Download</span><span class="lang-fr">Téléchargement</span></a>
         
         
-        <a href="https://github.com/antolikjan/mozaik.git">Source code</a>
+        <a href="https://github.com/antolikjan/mozaik.git"><span class="lang-en">Source code</span><span class="lang-fr">Code source</span></a>
         
       </div>
     </div>
@@ -59,7 +81,28 @@
 
   <div class="md-card-content">
     
-    <div class="project-description">
+    <div class="project-description lang-en">
+      <p>Mozaik is intended to improve the efficiency of computational neuroscience projects by relieving users from writing boilerplate code for projects involving complex heterogenous neural network models, complex stimulation and experimental protocols and subsequent analysis and plotting.</p>
+<p>It is built on top of the following tools:</p>
+<ul>
+<li>PyNN (for simulator independent neural network model definition)</li>
+<li>Neo (for exchange and internal representation of data)</li>
+<li>matplotib (for plotting)</li>
+</ul>
+<p>Mozaik currently covers the following main areas of the neural simulation workflow:</p>
+<ul>
+<li>High-level components for definition of topologically organized spiking networks (built on top of PyNN)</li>
+<li>Experiment control (description and execution of experiments)</li>
+<li>Stimulus definition framework</li>
+<li>Data storage (storage of recordings and analysis results)</li>
+<li>Data manipulation (a query based system for performing high-level filtering operations over the datastore)</li>
+<li>Analysis module</li>
+<li>Plotting module</li>
+</ul>
+    </div>
+    
+    
+    <div class="project-description lang-fr">
       <p>Mozaik is intended to improve the efficiency of computational neuroscience projects by relieving users from writing boilerplate code for projects involving complex heterogenous neural network models, complex stimulation and experimental protocols and subsequent analysis and plotting.</p>
 <p>It is built on top of the following tools:</p>
 <ul>
@@ -81,7 +124,7 @@
     
 
     
-    <h3>Contributors</h3>
+    <h3><span class="lang-en">Contributors</span><span class="lang-fr">Contributeurs</span></h3>
     <div class="people-grid">
       
       <a href="/people/antolik/" class="person-tile">Jan Antolik</a>

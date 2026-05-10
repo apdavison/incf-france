@@ -6,16 +6,29 @@
   <title>INCF France — PyHRF</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -26,6 +39,13 @@
           a.classList.add('active');
         }
       });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
+      });
     })();
   </script>
   <div class="content-container">
@@ -35,15 +55,17 @@
   <div class="md-card-title">
     <div class="md-card-title-text">
       <span class="md-headline">PyHRF</span>
-      <span class="md-subhead">PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.</span>
+      <span class="md-subhead lang-en">PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.</span>
+      <span class="md-subhead lang-fr">PyHRF is a Python library for the analysis of fMRI data based on the study of hemodynamics.</span>
+      
       <span class="md-subhead">CeCILL Free Software License Agreement v2.1</span>
       <div class="project-links">
         
-        <a href="https://pyhrf.github.io">Documentation</a>
+        <a href="https://pyhrf.github.io"><span class="lang-en">Documentation</span><span class="lang-fr">Documentation</span></a>
         
         
         
-        <a href="https://github.com/pyhrf/pyhrf">Source code</a>
+        <a href="https://github.com/pyhrf/pyhrf"><span class="lang-en">Source code</span><span class="lang-fr">Code source</span></a>
         
       </div>
     </div>
@@ -57,7 +79,18 @@
 
   <div class="md-card-content">
     
-    <div class="project-description">
+    <div class="project-description lang-en">
+      <p>PyHRF is a set of tools for within-subject fMRI data analysis, focused on the characterization of the hemodynamics.</p>
+<p>Within the chain of fMRI data processing, these tools provide alternatives to the classical within-subject GLM fitting procedure. The inputs are preprocessed images (except spatial smoothing) and the outputs are the contrast maps and the HRF estimates.</p>
+<p>The package is mainly written in Python and provides the implementation of the two following methods:</p>
+<ul>
+<li>The joint-detection estimation (JDE) approach, which divides the brain into functionally homogeneous regions and provides one HRF estimate per region as well as response levels specific to each voxel and each experimental condition. This method embeds a temporal regularization on the estimated HRFs and an adaptive spatial regularization on the response levels.</li>
+<li>The Regularized Finite Impulse Response (RFIR) approach, which provides HRF estimates for each voxel and experimental conditions. This method embeds a temporal regularization on the HRF shapes, but proceeds independently across voxels (no spatial model). See Introduction for a more detailed overview.</li>
+</ul>
+    </div>
+    
+    
+    <div class="project-description lang-fr">
       <p>PyHRF is a set of tools for within-subject fMRI data analysis, focused on the characterization of the hemodynamics.</p>
 <p>Within the chain of fMRI data processing, these tools provide alternatives to the classical within-subject GLM fitting procedure. The inputs are preprocessed images (except spatial smoothing) and the outputs are the contrast maps and the HRF estimates.</p>
 <p>The package is mainly written in Python and provides the implementation of the two following methods:</p>
@@ -69,7 +102,7 @@
     
 
     
-    <h3>Contributors</h3>
+    <h3><span class="lang-en">Contributors</span><span class="lang-fr">Contributeurs</span></h3>
     <div class="people-grid">
       
       <a href="/people/dojat/" class="person-tile">Michel Dojat</a>

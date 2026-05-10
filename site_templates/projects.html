@@ -1,9 +1,12 @@
 {% extends "base.html" %}
-{% block title_suffix %} — Projects{% endblock %}
+{% block title_suffix %} — <span class="lang-en">Projects</span><span class="lang-fr">Projets</span>{% endblock %}
 {% block content %}
 
-<h1>Projects</h1>
-<p>Neuroinformatics tools and services developed in France.</p>
+<h1><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></h1>
+<p>
+  <span class="lang-en">Neuroinformatics tools and services developed in France.</span>
+  <span class="lang-fr">Outils et services de neuroinformatique développés en France.</span>
+</p>
 
 <div class="project-grid">
   {% for project in projects %}

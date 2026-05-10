@@ -399,3 +399,24 @@ hr {
     width: 1.2em;
     vertical-align: middle;
 }
+
+/* --- Language switching --- */
+html[lang="fr"] .lang-en { display: none; }
+html[lang="en"] .lang-fr { display: none; }
+
+.lang-switcher {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.lang-switcher img {
+    width: 1.6em;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.lang-switcher img:hover {
+    opacity: 1;
+}

@@ -6,17 +6,19 @@
   <div class="md-card-title">
     <div class="md-card-title-text">
       <span class="md-headline">{{ project.name }}</span>
-      {% if project.short_description_en %}<span class="md-subhead">{{ project.short_description_en }}</span>{% endif %}
+      {% if project.short_description_en %}<span class="md-subhead lang-en">{{ project.short_description_en }}</span>{% endif %}
+      {% if project.short_description_fr %}<span class="md-subhead lang-fr">{{ project.short_description_fr }}</span>
+      {% elif project.short_description_en %}<span class="md-subhead lang-fr">{{ project.short_description_en }}</span>{% endif %}
       {% if project.licence %}<span class="md-subhead">{{ project.licence }}</span>{% endif %}
       <div class="project-links">
         {% if project.documentation %}
-        <a href="{{ project.documentation }}">Documentation</a>
+        <a href="{{ project.documentation }}"><span class="lang-en">Documentation</span><span class="lang-fr">Documentation</span></a>
         {% endif %}
         {% if project.download %}
-        <a href="{{ project.download }}">Download</a>
+        <a href="{{ project.download }}"><span class="lang-en">Download</span><span class="lang-fr">Téléchargement</span></a>
         {% endif %}
         {% if project.source_code %}
-        <a href="{{ project.source_code }}">Source code</a>
+        <a href="{{ project.source_code }}"><span class="lang-en">Source code</span><span class="lang-fr">Code source</span></a>
         {% endif %}
       </div>
     </div>
@@ -30,13 +32,22 @@
 
   <div class="md-card-content">
     {% if project.long_description_en_html %}
-    <div class="project-description">
+    <div class="project-description lang-en">
+      {{ project.long_description_en_html | safe }}
+    </div>
+    {% endif %}
+    {% if project.long_description_fr_html %}
+    <div class="project-description lang-fr">
+      {{ project.long_description_fr_html | safe }}
+    </div>
+    {% elif project.long_description_en_html %}
+    <div class="project-description lang-fr">
       {{ project.long_description_en_html | safe }}
     </div>
     {% endif %}
 
     {% if project.contributors %}
-    <h3>Contributors</h3>
+    <h3><span class="lang-en">Contributors</span><span class="lang-fr">Contributeurs</span></h3>
     <div class="people-grid">
       {% for contributor in project.contributors %}
       <a href="/people/{{ contributor.id }}/" class="person-tile">{{ contributor.display_name }}</a>

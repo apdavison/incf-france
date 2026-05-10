@@ -2,32 +2,51 @@
 {% block content %}
 
 <div class="notice">
-  <p>This website contains information about neuroinformatics research in France.</p>
+  <div class="lang-en">
+    <p>This website contains information about neuroinformatics research in France.</p>
 
-  <p>It was formerly the website of the INCF France national node. Following changes to the INCF membership structure,
-  the node is no longer active, although many of its members are still active in INCF activities,
-  and a number of French institutions are <a href="https://www.incf.org/network/institutions">INCF members</a>.</p>
+    <p>It was formerly the website of the INCF France national node. Following changes to the INCF membership structure,
+    the node is no longer active, although many of its members are still active in INCF activities,
+    and a number of French institutions are <a href="https://www.incf.org/network/institutions">INCF members</a>.</p>
 
-  <p>If you would like to be added (or removed) from the <a href="/people/">list of neuroinformatics researchers working in France</a>,
-    wish to edit your profile, or wish to add/remove a tool or service from the <a href="/projects/">tool registry</a>,
-    please open an <a href="https://github.com/apdavison/incf-france/issues">issue</a> or <a href="https://github.com/apdavison/incf-france/pulls">pull request</a>.
+    <p>If you would like to be added (or removed) from the <a href="/people/">list of neuroinformatics researchers working in France</a>,
+      wish to edit your profile, or wish to add/remove a tool or service from the <a href="/projects/">tool registry</a>,
+      please open an <a href="https://github.com/apdavison/incf-france/issues">issue</a> or <a href="https://github.com/apdavison/incf-france/pulls">pull request</a>.
+  </div>
+  <div class="lang-fr">
+    <p>Ce site web contient des informations sur la recherche en neuroinformatique en France.</p>
+
+    <p>Il était auparavant le site du nœud national France de l'INCF. Suite aux changements de la structure d'adhésion de l'INCF,
+    le nœud n'est plus actif, bien que nombre de ses membres restent actifs dans les activités de l'INCF,
+    et plusieurs institutions françaises sont <a href="https://www.incf.org/network/institutions">membres de l'INCF</a>.</p>
+
+    <p>Si vous souhaitez être ajouté(e) (ou retiré(e)) de la <a href="/people/">liste des chercheurs en neuroinformatique travaillant en France</a>,
+      modifier votre profil, ou ajouter/supprimer un outil ou service du <a href="/projects/">registre des outils</a>,
+      veuillez ouvrir une <a href="https://github.com/apdavison/incf-france/issues">issue</a> ou une <a href="https://github.com/apdavison/incf-france/pulls">pull request</a>.
+  </div>
 </div>
 
 <div class="card-grid">
   <div class="md-card">
-    <div class="md-card-title"><h3>People</h3></div>
-    <div class="md-card-content">
-      <p>Find out about neuroinformatics researchers working in France.</p>
+    <div class="md-card-title">
+      <h3><span class="lang-en">People</span><span class="lang-fr">Personnes</span></h3>
     </div>
-    <div class="md-card-actions"><a href="/people/">More...</a></div>
+    <div class="md-card-content">
+      <p class="lang-en">Find out about neuroinformatics researchers working in France.</p>
+      <p class="lang-fr">Découvrez les chercheurs en neuroinformatique travaillant en France.</p>
+    </div>
+    <div class="md-card-actions"><a href="/people/"><span class="lang-en">More...</span><span class="lang-fr">Plus...</span></a></div>
   </div>
 
   <div class="md-card">
-    <div class="md-card-title"><h3>Projects</h3></div>
-    <div class="md-card-content">
-      <p>Find out about neuroinformatics tools and services developed in France.</p>
+    <div class="md-card-title">
+      <h3><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></h3>
     </div>
-    <div class="md-card-actions"><a href="/projects/">More...</a></div>
+    <div class="md-card-content">
+      <p class="lang-en">Find out about neuroinformatics tools and services developed in France.</p>
+      <p class="lang-fr">Découvrez les outils et services de neuroinformatique développés en France.</p>
+    </div>
+    <div class="md-card-actions"><a href="/projects/"><span class="lang-en">More...</span><span class="lang-fr">Plus...</span></a></div>
   </div>
 
 <div class="card-grid">
@@ -38,16 +57,19 @@
       <p>Marseille, 21st May 2019.<br>
       "Gestion et partage de données en neuroinformatique" (GEANT)</p>
     </div>
-    <div class="md-card-actions"><a href="/workshops/geant2019/">More information...</a></div>
+    <div class="md-card-actions"><a href="/workshops/geant2019/"><span class="lang-en">More information...</span><span class="lang-fr">Plus d'informations...</span></a></div>
   </div>
 
   <div class="md-card">
     <img src="/media/photos/ni2019.png" class="md-card-image" alt="Neuroinformatics 2019">
     <div class="md-card-title"><h3>Neuroinformatics 2019</h3></div>
     <div class="md-card-content">
-      <p>The annual <a href="http://www.neuroinformatics2019.org/">INCF conference</a>
+      <p class="lang-en">The annual <a href="http://www.neuroinformatics2019.org/">INCF conference</a>
       was held in Warsaw, with a keynote from INSERM researcher Henry Kennedy
       and an invited talk by INRIA researcher Maureen Clerc.</p>
+      <p class="lang-fr">La <a href="http://www.neuroinformatics2019.org/">conférence annuelle de l'INCF</a>
+      s'est tenue à Varsovie, avec une conférence plénière du chercheur INSERM Henry Kennedy
+      et une présentation invitée de la chercheuse INRIA Maureen Clerc.</p>
     </div>
   </div>
 
@@ -55,11 +77,16 @@
     <img src="/media/photos/ni2018.png" class="md-card-image" alt="Neuroinformatics 2018">
     <div class="md-card-title"><h3>Neuroinformatics 2018</h3></div>
     <div class="md-card-content">
-      <p>The annual <a href="http://www.neuroinformatics2018.org/">INCF conference</a>
+      <p class="lang-en">The annual <a href="http://www.neuroinformatics2018.org/">INCF conference</a>
       took place in Montréal, with keynotes from INRIA researchers
       <a href="/people/maumet/">Camille Maumet</a>
       and <a href="/people/varoquaux/">Gaël Varoquaux</a>
       and CNRS researcher <a href="/people/davison/">Andrew Davison</a>.</p>
+      <p class="lang-fr">La <a href="http://www.neuroinformatics2018.org/">conférence annuelle de l'INCF</a>
+      s'est tenue à Montréal, avec des conférences plénières des chercheurs INRIA
+      <a href="/people/maumet/">Camille Maumet</a>
+      et <a href="/people/varoquaux/">Gaël Varoquaux</a>
+      et du chercheur CNRS <a href="/people/davison/">Andrew Davison</a>.</p>
     </div>
   </div>
 </div>

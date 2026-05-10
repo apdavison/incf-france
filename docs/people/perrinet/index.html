@@ -6,16 +6,29 @@
   <title>INCF France — Laurent Perrinet</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -25,6 +38,13 @@
         if (href !== '/' && path.startsWith(href)) {
           a.classList.add('active');
         }
+      });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
       });
     })();
   </script>
@@ -51,9 +71,10 @@
 
   <div class="md-card-content">
     
+    
 
     
-    <h3>Projects</h3>
+    <h3><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></h3>
     <div class="project-grid">
       
       <a href="/projects/MotionClouds/" class="project-tile">

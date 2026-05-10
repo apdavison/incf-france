@@ -6,16 +6,29 @@
   <title>INCF France — NIPY</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -26,6 +39,13 @@
           a.classList.add('active');
         }
       });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
+      });
     })();
   </script>
   <div class="content-container">
@@ -35,15 +55,17 @@
   <div class="md-card-title">
     <div class="md-card-title-text">
       <span class="md-headline">NIPY</span>
-      <span class="md-subhead">NIPY is a Python project for analysis of structural and functional neuroimaging data.</span>
+      <span class="md-subhead lang-en">NIPY is a Python project for analysis of structural and functional neuroimaging data.</span>
+      <span class="md-subhead lang-fr">NIPY is a Python project for analysis of structural and functional neuroimaging data.</span>
+      
       <span class="md-subhead">BSD 3-Clause &#34;New&#34; or &#34;Revised&#34; License</span>
       <div class="project-links">
         
-        <a href="http://nipy.org/nipy">Documentation</a>
+        <a href="http://nipy.org/nipy"><span class="lang-en">Documentation</span><span class="lang-fr">Documentation</span></a>
         
         
         
-        <a href="https://github.com/nipy/nipy">Source code</a>
+        <a href="https://github.com/nipy/nipy"><span class="lang-en">Source code</span><span class="lang-fr">Code source</span></a>
         
       </div>
     </div>
@@ -57,7 +79,20 @@
 
   <div class="md-card-content">
     
-    <div class="project-description">
+    <div class="project-description lang-en">
+      <p>Neuroimaging tools for Python.</p>
+<p>The aim of NIPY is to produce a platform-independent Python environment for the analysis of functional brain imaging data using an open development model.</p>
+<p>In NIPY we aim to:</p>
+<ul>
+<li>Provide an open source, mixed language scientific programming environment suitable for rapid development.</li>
+<li>Create software components in this environment to make it easy to develop tools for MRI, EEG, PET and other modalities.</li>
+<li>Create and maintain a wide base of developers to contribute to this platform.</li>
+<li>To maintain and develop this framework as a single, easily installable bundle.</li>
+</ul>
+    </div>
+    
+    
+    <div class="project-description lang-fr">
       <p>Neuroimaging tools for Python.</p>
 <p>The aim of NIPY is to produce a platform-independent Python environment for the analysis of functional brain imaging data using an open development model.</p>
 <p>In NIPY we aim to:</p>
@@ -71,7 +106,7 @@
     
 
     
-    <h3>Contributors</h3>
+    <h3><span class="lang-en">Contributors</span><span class="lang-fr">Contributeurs</span></h3>
     <div class="people-grid">
       
       <a href="/people/thirion/" class="person-tile">Bertrand Thirion</a>

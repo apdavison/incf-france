@@ -6,16 +6,29 @@
   <title>INCF France — PyNN</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -26,6 +39,13 @@
           a.classList.add('active');
         }
       });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
+      });
     })();
   </script>
   <div class="content-container">
@@ -35,17 +55,18 @@
   <div class="md-card-title">
     <div class="md-card-title-text">
       <span class="md-headline">PyNN</span>
-      <span class="md-subhead">A Python package for simulator-independent specification of neuronal network models.</span>
+      <span class="md-subhead lang-en">A Python package for simulator-independent specification of neuronal network models.</span>
+      <span class="md-subhead lang-fr">A Python package for simulator-independent specification of neuronal network models.</span>
       <span class="md-subhead">CeCILL Free Software License Agreement v2.0</span>
       <div class="project-links">
         
-        <a href="http://neuralensemble.org/docs/PyNN/">Documentation</a>
+        <a href="http://neuralensemble.org/docs/PyNN/"><span class="lang-en">Documentation</span><span class="lang-fr">Documentation</span></a>
         
         
-        <a href="https://pypi.org/project/PyNN/">Download</a>
+        <a href="https://pypi.org/project/PyNN/"><span class="lang-en">Download</span><span class="lang-fr">Téléchargement</span></a>
         
         
-        <a href="https://github.com/NeuralEnsemble/PyNN/">Source code</a>
+        <a href="https://github.com/NeuralEnsemble/PyNN/"><span class="lang-en">Source code</span><span class="lang-fr">Code source</span></a>
         
       </div>
     </div>
@@ -59,7 +80,18 @@
 
   <div class="md-card-content">
     
-    <div class="project-description">
+    <div class="project-description lang-en">
+      <p>PyNN (pronounced 'pine') is a simulator-independent language for building neuronal network models.</p>
+<p>In other words, you can write the code for a model once, using the PyNN API and the Python programming language, and then run it without modification on any simulator that PyNN supports (currently <a href="http://www.neuron.yale.edu/neuron/">NEURON</a>, NEST, and Brian), and on the SpiNNaker and BrainScaleS neuromorphic hardware systems.</p>
+<p>The PyNN API aims to support modelling at a high-level of abstraction (populations of neurons, layers, columns and the connections between them) while still allowing access to the details of individual neurons and synapses when required. PyNN provides a library of standard neuron, synapse and synaptic plasticity models, which have been verified to work the same on the different supported simulators. PyNN also provides a set of commonly-used connectivity algorithms (e.g. all-to-all, random, distance-dependent, small-world) but makes it easy to provide your own connectivity in a simulator-independent way, either using the Connection Set Algebra (<a href="http://software.incf.org/software/csa/">Djurfeldt, 2010</a>) or by writing your own Python code.</p>
+<p>Even if you don't wish to run simulations on multiple simulators, you may benefit from writing your simulation code using PyNN's powerful, high-level interface. In this case, you can use any neuron or synapse model supported by your simulator, and are not restricted to the standard models.</p>
+<h3>Citing PyNN</h3>
+<p>If you publish work using or mentioning PyNN, we would appreciate it if you would cite the following paper:</p>
+<p>Davison AP, Brüderle D, Eppler JM, Kremkow J, Muller E, Pecevski DA, Perrinet L and Yger P (2009) PyNN: a common interface for neuronal network simulators. <em>Frontiers in Neuroinformatics</em> 2:11 <a href="http://doi.org/10.3389/neuro.11.011.2008">doi:10.3389/neuro.11.011.2008</a></p>
+    </div>
+    
+    
+    <div class="project-description lang-fr">
       <p>PyNN (pronounced 'pine') is a simulator-independent language for building neuronal network models.</p>
 <p>In other words, you can write the code for a model once, using the PyNN API and the Python programming language, and then run it without modification on any simulator that PyNN supports (currently <a href="http://www.neuron.yale.edu/neuron/">NEURON</a>, NEST, and Brian), and on the SpiNNaker and BrainScaleS neuromorphic hardware systems.</p>
 <p>The PyNN API aims to support modelling at a high-level of abstraction (populations of neurons, layers, columns and the connections between them) while still allowing access to the details of individual neurons and synapses when required. PyNN provides a library of standard neuron, synapse and synaptic plasticity models, which have been verified to work the same on the different supported simulators. PyNN also provides a set of commonly-used connectivity algorithms (e.g. all-to-all, random, distance-dependent, small-world) but makes it easy to provide your own connectivity in a simulator-independent way, either using the Connection Set Algebra (<a href="http://software.incf.org/software/csa/">Djurfeldt, 2010</a>) or by writing your own Python code.</p>
@@ -71,7 +103,7 @@
     
 
     
-    <h3>Contributors</h3>
+    <h3><span class="lang-en">Contributors</span><span class="lang-fr">Contributeurs</span></h3>
     <div class="people-grid">
       
       <a href="/people/davison/" class="person-tile">Andrew Davison</a>

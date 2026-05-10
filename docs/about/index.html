@@ -3,19 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>INCF France — About</title>
+  <title>INCF France — <span class="lang-en">About</span><span class="lang-fr">À propos</span></title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="/static/site.css">
+  <script>
+    (function() {
+      var lang = localStorage.getItem('lang') ||
+        ((navigator.language || 'en').startsWith('fr') ? 'fr' : 'en');
+      document.documentElement.lang = lang;
+    })();
+  </script>
 </head>
 <body>
   <div class="site-toolbar">
-    <a href="/" class="site-title">Neuroinformatics in France</a>
+    <a href="/" class="site-title"><span class="lang-en">Neuroinformatics in France</span><span class="lang-fr">Neuroinformatique en France</span></a>
+    <div class="lang-switcher">
+      <img src="/media/icons/united-kingdom.svg" class="lang-switch lang-fr"
+           data-lang="en" title="English" alt="EN">
+      <img src="/media/icons/france.svg" class="lang-switch lang-en"
+           data-lang="fr" title="Français" alt="FR">
+    </div>
   </div>
   <nav class="site-nav">
-    <a href="/about/">About</a>
-    <a href="/people/">People</a>
-    <a href="/projects/">Projects</a>
-    <a href="/workshops/geant2019/">Workshops</a>
+    <a href="/about/"><span class="lang-en">About</span><span class="lang-fr">À propos</span></a>
+    <a href="/people/"><span class="lang-en">People</span><span class="lang-fr">Personnes</span></a>
+    <a href="/projects/"><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></a>
+    <a href="/workshops/geant2019/"><span class="lang-en">Workshops</span><span class="lang-fr">Ateliers</span></a>
   </nav>
   <script>
     (function() {
@@ -26,13 +39,24 @@
           a.classList.add('active');
         }
       });
+      document.querySelectorAll('.lang-switch').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var lang = el.dataset.lang;
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+        });
+      });
     })();
   </script>
   <div class="content-container">
     
 
-<h1>About Neuroinformatics in France</h1>
+<h1>
+  <span class="lang-en">About Neuroinformatics in France</span>
+  <span class="lang-fr">La Neuroinformatique en France</span>
+</h1>
 
+<div class="lang-en">
 <p>
 Neuroinformatics combines neuroscience and informatics research to
 develop and apply advanced tools and approaches essential for a
@@ -68,6 +92,45 @@ the <a href="http://www.gdr-isis.fr/neurostic/">NeuroSTIC</a> community, etc.</p
 </p>
 
 <h2>Former organising committee</h2>
+</div>
+
+<div class="lang-fr">
+<p>
+La neuroinformatique combine la recherche en neurosciences et en informatique pour
+développer et appliquer des outils et approches avancés, essentiels pour faire progresser
+notre compréhension de la structure et du fonctionnement du cerveau.</p>
+
+<p>L'<a href="http://www.incf.org">International Neuroinformatics Coordinating Facility</a> (INCF) est
+une organisation professionnelle dédiée à l'avancement du domaine de la neuroinformatique.
+L'un de ses objectifs est de développer une infrastructure internationale de neuroinformatique,
+qui favorise le partage des données et des ressources informatiques au sein de la communauté
+de recherche internationale.
+Un objectif plus large de l'INCF est d'aider à développer des applications évolutives, portables et extensibles
+pouvant être utilisées par des laboratoires de neurosciences dans le monde entier.</p>
+
+<a href="/"><img src="/media/INCF-National-Node-of-France.png" alt="INCF France" style="float: left"></a>
+
+<p>INCF France était un nœud national de l'INCF dans le cadre de l'ancienne structure de l'INCF, opérant sous l'autorité de
+l'<a href="http://www.aviesan.fr/">Alliance nationale pour les sciences de la vie et de la santé</a> (ITMO Neurosciences),
+et basé au <a href="http://neuro-psi.fr">NeuroPSI</a> (CNRS-Université Paris-Saclay).</p>
+
+<p>L'objectif principal du nœud national français de l'INCF était de
+faciliter les interactions entre les chercheurs en neuroinformatique en France,
+et de servir de lien entre les activités mondiales de l'INCF et les scientifiques locaux,
+en collaboration avec d'autres acteurs travaillant en neuroinformatique, tels que
+l'infrastructure <a href="https://its.aviesan.fr/index.php?pagendx=291">France Life Imaging</a>,
+la <a href="http://www.neurosciences.asso.fr/">Société des Neurosciences</a>,
+la communauté <a href="http://www.gdr-isis.fr/neurostic/">NeuroSTIC</a>, etc.</p>
+
+<p>Nous maintenons désormais ce site comme archive des activités passées, et comme annuaire des chercheurs
+    en neuroinformatique travaillant en France et des outils et services logiciels qu'ils développent.
+    La dernière mise à jour complète de cet annuaire date de 2019,
+    mais vous pouvez demander des mises à jour via <a href="https://github.com/apdavison/incf-france/issues">GitHub</a>.
+</p>
+
+<h2>Ancien comité d'organisation</h2>
+</div>
+
 <ul>
     <li><a href="/people/davison/">Andrew Davison</a> (NeuroPSI, CNRS-Université Paris-Saclay)</li>
     <li><a href="/people/dojat/">Michel Dojat</a> (GIN, Inserm)</li>

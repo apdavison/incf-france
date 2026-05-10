@@ -5,15 +5,11 @@
 <img src="/media/photos/geant2019.jpg" class="workshop-banner" alt="GEANT workshop 2019">
 
 <h1>
-  <span class="lang-fr">GEstion et pArtage de données en NeuroinformaTique (GEANT)
-    <img src="/media/icons/united-kingdom.svg" alt="EN" class="flag-icon lang-switch" data-lang="en" style="cursor:pointer" title="English">
-  </span>
-  <span class="lang-en">Workshop on Data Management and Sharing in Neuroinformatics
-    <img src="/media/icons/france.svg" alt="FR" class="flag-icon lang-switch" data-lang="fr" style="cursor:pointer" title="Français">
-  </span>
+  <span class="lang-fr">GEstion et pArtage de données en NeuroinformaTique (GEANT)</span>
+  <span class="lang-en">Workshop on Data Management and Sharing in Neuroinformatics</span>
 </h1>
 
-<section id="fr">
+<section class="lang-fr">
   <h2>Le workshop 2019 de l'INCF-France</h2>
   <h3>Mardi 21 Mai 2019 (veille de l'ouverture de <a href="https://www.neurosciences.asso.fr/V2/colloques/SN19/index_en.php">NeuroFrance 2019</a> à Marseille), 9h-18h</h3>
 
@@ -99,9 +95,7 @@
     licence <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small></p>
 </section>
 
-<hr>
-
-<section id="en">
+<section class="lang-en">
   <h2>Organised by INCF-France</h2>
   <h3>Tuesday 21st May 2019 (the day before <a href="https://www.neurosciences.asso.fr/V2/colloques/SN19/index_en.php">NeuroFrance 2019</a> in Marseille), 9am-6pm</h3>
 
@@ -180,22 +174,5 @@
     <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>,
     licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small></p>
 </section>
-
-<script>
-  (function() {
-    function showLang(lang) {
-      ['fr', 'en'].forEach(function(l) {
-        var display = l === lang ? '' : 'none';
-        document.querySelectorAll('.lang-' + l).forEach(function(el) { el.style.display = display; });
-        document.getElementById(l).style.display = display;
-      });
-      document.querySelector('hr').style.display = 'none';
-    }
-    document.querySelectorAll('.lang-switch').forEach(function(el) {
-      el.addEventListener('click', function() { showLang(el.dataset.lang); });
-    });
-    showLang('fr');
-  })();
-</script>
 
 {% endblock %}

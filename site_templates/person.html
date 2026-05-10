@@ -34,11 +34,16 @@
 
   <div class="md-card-content">
     {% if person.interests_en_html %}
-    {{ person.interests_en_html | safe }}
+    <div class="lang-en">{{ person.interests_en_html | safe }}</div>
+    {% endif %}
+    {% if person.interests_fr_html %}
+    <div class="lang-fr">{{ person.interests_fr_html | safe }}</div>
+    {% elif person.interests_en_html %}
+    <div class="lang-fr">{{ person.interests_en_html | safe }}</div>
     {% endif %}
 
     {% if person.projects %}
-    <h3>Projects</h3>
+    <h3><span class="lang-en">Projects</span><span class="lang-fr">Projets</span></h3>
     <div class="project-grid">
       {% for project in person.projects %}
       <a href="/projects/{{ project.id }}/" class="project-tile">
