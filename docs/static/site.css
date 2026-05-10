@@ -26,9 +26,16 @@ body {
     overflow: visible;
 }
 
-.site-logo {
-    width: auto;
-    display: block;
+.site-title,
+.site-title:link,
+.site-title:visited,
+.site-title:hover,
+.site-title:active {
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(0, 95, 115, 0.75);
+    text-decoration: none;
+    line-height: 88px;
 }
 
 /* --- Nav bar (white, matching Angular Material md-nav-bar) --- */
@@ -80,6 +87,14 @@ body {
     right: 0;
     height: 2px;
     background: #009688;
+}
+
+/* --- Notice banner --- */
+.notice {
+    padding: 2rem 1.5rem;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1.5rem;
 }
 
 /* --- Main content area --- */
